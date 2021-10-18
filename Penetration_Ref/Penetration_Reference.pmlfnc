@@ -1,0 +1,238 @@
+---------------------------------Penetration Reference
+
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!coll[1] = 'Line Number, Reference, Type, Item Pos, Spool Length, Penetration Item Duct Length, Penetration Item Duct Width, Penetration Material, Penetration Type, Pene Struc,Pene Hole, Pene Pos, Penetration Dimension, Pene Status, Alignment, Size Analysis, Size Discrepancy, Plate Length, Plate Width'
+
+!format = object format()
+!format.dp = 0
+!firs = array()
+
+do !i values !readList
+    var !bo coll all (STRT BEND MESH TAPER BRCO GRILL ELBO) for $!i
+    do !j values !bo
+        var !pen :penref of $!j  
+        !type = type of $!j
+        !mat = matn of $!j
+        
+        if !pen neq 'unset' then
+            var !pos pos $!j wrt world
+            var !penPos pos $!pen wrt world
+            var !refi refno of $!j
+            !ref = ' ' & !refi
+            
+            !fit = fitlen of $!j
+            !itemLen = desp[4] of $!j
+            !itemBre = desp[5] of $!j
+
+            if !itemLen GT !itemBre then
+                !lent = string(!itemLen,!format)
+                !breth = string(!itemBre,!format)
+            else
+                !lent = string(!itemBre,!format)
+                !breth = string(!itemLen,!format)
+            endif
+                                 
+            --!itemDim = !itemLen.string() & ' by ' & !itemBre.string()
+
+            var !plate :plateref of $!j
+            handle any
+                !plate = 'unset'
+            endhandle
+
+            if !plate eq 'unset' then
+                !pll = 'NA'
+                !plw = 'NA'
+            else
+                !hol = desp of $!plate
+                 --q var !plate !hol[41] !hol[42]
+                !pll = string(!hol[41], !format)                
+                !plw = string(!hol[42], !format)
+            endif       
+
+            if matchw('$!pen','*VB*') eq TRUE then
+                !penType = 'Wall'
+            elseif matchw('$!pen','*DB*') eq TRUE then
+                !penType = 'Floor'
+            endif
+            
+            if type of $!pen eq 'SBFI' then
+                !hole = 'Penetration Set'
+                !dim = desp of $!pen
+                !n = !dim.size()
+                !dim.sort()
+                !leng = !dim[(!n)]
+                    handle ANY
+                        !leng = 0
+                    endhandle
+                !bre = !dim[(!n - 1)]
+                    handle ANY
+                        !bre = 0
+                    endhandle
+
+                !penlen = string()
+                !penDim = string(!leng) & ' by ' & string(!bre)
+                
+                var !penStruc floor of $!pen
+                handle ANY
+                    var !penStruc cwall of $!pen
+                    handle ANY
+                        var !penStruc cfloor of $!pen
+                        handle ANY
+                            !penStruc = 'Special Case'
+                        endhandle
+                    endhandle
+                endhandle
+            else
+                !hole = 'No Penetration'
+                !penDim = 'null'
+                !penStruc = '$!pen'
+                !pen = 'null'
+                !penPos = 'null'
+                !align = 'null'
+                !sizeComp = 'null'
+                !ratio = 'null'
+                golabel /wrong
+            endif
+            
+
+            ----check Size Comparison
+            !itemProd = !itemLen * !itemBre
+            !penProd = !leng * !bre
+            
+            --q var !itenProd !penProd
+            
+            if !penProd eq 0 then
+                !sizeComp = 'Special Case'
+                !ratio = 'NA'
+            elseif !penDim EQ 'null' then
+                !sizeComp = 'No Penetration'
+                !ratio = 'NA'
+            elseif !itemProd EQ !penProd then
+                !sizeComp = 'Duct & Pen. Size is matched'
+                !ratio = '1'
+            elseif !itemProd GT !penProd then
+                !sizeComp = 'Duct Size exceeds Penetration Size'
+                !ratio = string((1 - !penProd / !itemProd), 'd2')
+            elseif !itemProd LT !penProd then
+                !sizeComp = 'Penetration Size exceeds Duct Size'
+                !ratio = string((1 - !itemprod / !penProd), 'd2')
+            endif
+            
+            
+            -----Check Alignment
+            var !dir p1 dir of $!j
+
+            !posp = !pos.split(' ')
+            !possp = !penPos.split(' ')
+
+            if !dir eq 'D' or !dir eq 'U' then
+                !comp = !posp[2]
+                !compp = !possp[2]
+                !domp = !posp[4]
+                !dompp = !possp[4]
+            elseif !dir eq 'N' or !dir eq 'S' then
+                !comp = !posp[2]
+                !compp = !possp[2]
+                !domp = !posp[6]
+                !dompp = !possp[6]
+            elseif !dir eq 'E' or !dir eq 'W' then
+                !comp = !posp[4]
+                !compp = !possp[4]
+                !domp = !posp[6]
+                !dompp = !possp[6]
+            endif
+
+            if !comp eq !compp AND !domp eq !dompp then
+                !align = 'Totally Aligned'
+            elseif !comp eq !compp AND !domp neq !dompp then
+                !align = 'Partly Aligned'
+            elseif !comp neq !compp AND !domp eq !dompp then
+                !align = 'Partly Aligned'
+            elseif !comp neq !compp AND !domp neq !dompp then
+                !align = 'Not Aligned - Potential Clash'
+            endif
+            
+            label /wrong
+                                   
+            !coll.append('$!i,$!ref,$!type,$!pos, $!fit,$!lent,$!breth,$!mat,$!penType,$!penStruc,$!pen,$!penPos,$!penDim,$!hole,$!align,$!sizeComp,$!ratio, $!pll, $!plw')
+        
+        endif
+        
+    enddo
+enddo
+
+!col = object file('C:\UK3712_PDMS\Makros\col.csv')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\col.csv &'   
+
+
+
+
+-------------------------------Penetration Reference just for ATTAs
+
+!listi = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Makros\list.txt')
+!readList = !listi.readfile()
+!coll[1] = 'Line Number, Reference, Type, Item Pos, Item Dim, Pene Type, Pene Struc,Pene Hole, Pene Pos, Pene Dim, Pene Status, Alignment, Size Analysis, Size Discrepancy'
+
+do !i values !readList
+    var !bo coll all (ATTA) for $!i
+    do !j values !bo
+        var !pen :penref of $!j  
+        !type = type of $!j
+        
+        if !pen neq 'unset' then
+            var !pos pos $!j wrt world
+            var !penPos pos $!pen wrt world
+            var !refi refno of $!j
+            var !bor p1 bor of $!j
+            !ref = ' ' & !refi
+            
+            if matchw('$!pen','*VB*') eq TRUE then
+                !penType = 'Wall'
+            elseif matchw('$!pen','*DB*') eq TRUE then
+                !penType = 'Floor'
+            endif
+            
+            if type of $!pen eq 'SBFI' then
+                !hole = 'Penetration Set'
+                !dim = desp of $!pen
+                !n = !dim.size()
+                !dim.sort()
+                !leng = !dim[(!n)]
+                    handle ANY
+                        !leng = 0
+                    endhandle
+                !bre = !dim[(!n - 1)]
+                    handle ANY
+                        !bre = 0
+                    endhandle
+                !penDim = string(!leng) & ' by ' & string(!bre)
+                
+                var !penStruc floor of $!pen
+                    handle ANY
+                    var !penStruc cwall of $!pen
+                        handle ANY
+                            !penStruc = 'Special Case'
+                        endhandle
+                    endhandle
+               
+            else
+                !hole = 'No Penetration'
+                !penDim = 'null'
+                !penStruc = '$!pen'
+                !pen = 'null'
+                !penPos = 'null'
+            endif
+            
+            !coll.append('$!i,$!ref,$!type,$!pos,$!bor,$!penType,$!penStruc,$!pen,$!penPos,$!penDim,$!hole')
+        endif
+        
+    enddo
+enddo
+
+!col = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Makros\col.csv')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom 'C:\Users\ihc_lodukoya\Desktop\Directory\Makros\col.csv &' 

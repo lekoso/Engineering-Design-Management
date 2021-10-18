@@ -1,0 +1,90 @@
+-------------------------------Penetration Reference just for ATTAs
+
+!listi = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Makros\list.txt')
+!readList = !listi.readfile()
+!coll[1] = 'Line Number, PDMS Reference, Type, Item Position relative to Site Origin, Nominal Bore, Penetration Type, Penetration Structure ,Penetration Name, Penetration Position relative to Site Origin, Penetration Length,Penetration Breadth, Penetration Status, Alignment, Size Analysis'
+
+!format = object format()
+!format.dp = 0
+!format.label = ''
+
+
+do !i values !readList
+    var !bo coll all (ATTA) for $!i
+    do !j values !bo
+        var !pen :penref of $!j  
+        !type = type of $!j
+        
+        if !pen neq 'unset' then
+            !posi = pos of $!j wrt world
+            !pos = !posi.string(!format).before('WRT')
+            --$p $!j
+            
+            !penPosi = pos of $!pen wrt world
+            handle any
+
+            endhandle
+            !penPos = !penPosi.string(!format).before('WRT')
+            
+            !bore = p1 bor of $!j
+            !bor = !bore.string(!format)
+            
+            var !refi refno of $!j
+            !ref = ' ' & !refi
+            
+            if matchw('$!pen','*VB*') eq TRUE then
+                !penType = 'Concrete Wall'
+            elseif matchw('$!pen','*DB*') eq TRUE then
+                !penType = 'Concrete Floor'
+             elseif matchw('$!pen','*VM*') eq TRUE then 
+                !penType = 'Steel Wall'
+             elseif matchw('$!pen','*DM*') eq TRUE then
+                !penType = 'Steel Floor'                
+            else
+                !penType = 'Unset'
+            endif
+            
+            if type of $!pen eq 'SBFI' then
+                !hole = 'Penetration Set'
+                !dim = desp of $!pen
+                !n = !dim.size()
+                !dim.sort()
+                !leng = !dim[(!n)]
+                    handle ANY
+                        !leng = 0
+                    endhandle
+                !bred = !dim[(!n - 1)]
+                    handle ANY
+                        !bred = 0
+                    endhandle
+                    
+                !len = real(!leng.string(!format))
+                !bre = real(!bred.string(!format))
+                
+                var !penStruc floor of $!pen
+                    handle ANY
+                    var !penStruc cwall of $!pen
+                        handle ANY
+                            !penStruc = 'Special Case'
+                        endhandle
+                    endhandle
+               
+            else
+                !hole = 'No Penetration'
+                !len = 0
+                !bre = 0
+                !penStruc = '$!pen'
+                !pen = 'null'
+                !penPos = 'null'
+            endif
+            
+            !coll.append('$!i,$!ref,$!type,$!pos,$!bor,$!penType,$!penStruc,$!pen,$!penPos,$!len,$!bre,$!hole')
+        endif
+        
+    enddo
+enddo
+
+!col = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Makros\col.csv')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom 'C:\Users\ihc_lodukoya\Desktop\Directory\Makros\col.csv &' 

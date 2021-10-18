@@ -1,0 +1,66 @@
+define object MWAddin
+
+endobject
+-------------------
+
+--define method MWAddin()
+
+--endmethod
+-------------------------------------------------
+-- Method: .modifyForm()
+-- Description: Makes modifications to the main form
+----------------------------------------------------
+define method .modifyForm()
+    !this.toolbars()
+endmethod
+
+---------------------------------------------------
+-- Method: .modifyMenus()
+-- Description: Runs all other menu creation methods
+---------------------------------------------------
+define method .modifyMenus()
+    !this.barMenu()
+    !this.menus()
+endmethod
+
+----------------------------------------------------
+-- Method: .barMenu()
+-- Description: Adds options to the bar menu for this application
+----------------------------------------------------
+define method .barMenu()
+    !bmenu = object APPBARMENU()
+    !bmenu.add(|HPC|, 'MYMENU')
+    !!appMenuCntrl.addBarMenu(!bmenu, 'ALL')
+endmethod
+
+-------------------------------------------------------
+-- Method: .menus()
+-- Description: Creates menus for this application
+----------------------------------------------------
+define method .menus()
+    !menu = object APPMENU('MYMENU')
+    
+    if !!CDCNUSER eq 'SYSTEM' then
+        !menu.add('CALLBACK', |Status|, |show !!status|, 'statusForm')
+    endif
+    !menu.add('CALLBACK', |Clipping Form|, |show !!Klippin|, 'KlippingForm')
+    !menu.add('CALLBACK', |Members Sort|, |show !!aphSortMembers|, 'sortForm')
+    !menu.add('CALLBACK', |Utilities|, |show !!Utilities|, 'utilitiesForm')
+    !menu.add('CALLBACK', |Branch Splitter|, |show !!splitbranch|, 'branch_splitter')
+    !!appMenuCntrl.addMenu(!menu, 'ALL')
+endmethod
+
+-----------------------------------------------------
+-- Method: .toolbars()
+-- Description: Creates toolbars for this application
+-----------------------------------------------------
+
+define method .toolbars()
+    frame .MyFormToolbar toolbar 'MyForm Toolbar'
+        button .b1 tooltip 'Open command window' pixmap /%PMLLIB%\Apps\redbutton32.png width 32 height 32 callback 'show _CADCBTH'
+    exit
+    !!appTbarCntrl.addToolbar('MyFormToolbar', 'ALL')
+endmethod
+
+----------------------------------------------------
+

@@ -1,0 +1,71 @@
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!vol[1] = 'Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Wrap, Fire Rating, AFC, Approved, A, B, C, D, E'
+
+!format = object format()
+!format.dp = 0
+!l = array()
+!rhs = array()
+
+do !j values !readList    
+
+    var !sec coll all SCTN for $!j
+    var !fitt coll all FITT for $!j
+    !fit = pos of $!fitt[1] wrt world
+    !fitu = !fit.up
+    !desp = desparam of $!fitt[1]
+    !desp.sort()
+
+    do !n values !sec
+        var !sp spref of $!n
+        !leng = cutl of $!n
+        if matchw('$!sp','*RHS*') then
+            !rhs.append(!leng)
+            skip
+        elseif matchw('$!sp','*L50*') or matchw('$!sp','*PFC*') then
+            !l.append(!leng)
+            skip
+        endif
+    enddo
+
+    !rhs.sort()
+    !l.sort()
+    --q var !j
+    !D = string(!l.last(), !format)
+    !E = string(!rhs.last(), !format)
+
+    !atta = '$!j' & '/DATUM'
+    !wrap = :Wrap of $!j
+    !fire = :firerate of $!j
+    !despi = desp of $!atta
+
+    if !fire eq 'EIS' and !wrap eq 'No' then
+        !A = string(!despi[1] + 180, !format)
+        !B = string(!despi[2] + 180, !format)
+        !C = string(!rhs.last() - !despi[2] - 180 - 50, !format)
+    else 
+        !A = string(!despi[1], !format)
+        !B = string(!despi[2], !format)
+        !C = string(!rhs.last() - !despi[2] - 50, !format)
+    endif
+
+    !hvac = name of hvac of $!atta
+    !typ = :supporttype of $!j
+    !data = :supportdata of $!j
+    !pag = :Support_PageNum of $!j
+    !apruv = :Approved of $!j    
+    !afc = :afc of $!j
+    var !room gtroom of $!j
+    !vol.append('$!j, $!hvac, $!typ, $!data, $!pag,$!room, $!wrap, $!fire, $!afc, $!apruv, $!A, $!B, $!C, $!D, $!E')
+ 
+    !l.clear()
+    !rhs.clear()
+enddo
+--
+!voll = object file('C:\UK3712_PDMS\Makros\vol.csv')        
+!voll.writefile('overwrite',!vol)
+!voll.close()
+
+syscom 'C:\UK3712_PDMS\Makros\vol.csv &'
+
+

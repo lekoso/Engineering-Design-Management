@@ -1,0 +1,53 @@
+--Custom function to enable the production of GA
+--Drawing for HPC UK3712
+
+!z = !!GPH3DDESIGN1.view.CLIPBOXPOSITION
+!eas = !!GPH3DDESIGN1.view.CLIPBOXXLEN
+!nor = !!GPH3DDESIGN1.view.CLIPBOXYLEN
+!up = !!GPH3DDESIGN1.view.CLIPBOXzLEN
+
+!from = 'E ' & string(!z[1] - !eas / 2) & ' N ' & string(!z[2] - !nor / 2) & ' U ' & string(!z[3] - !up / 2)
+!to = 'E ' & string(!z[1] + !eas / 2) & ' N ' & string(!z[2] + !nor / 2) & ' U ' & string(!z[3] + !up / 2)
+
+q var !from !to
+
+--!e1 = 'E ' & string(!z[1] - !eas / 2) & 'N $!z[2] U $!z[3]'
+--!e2 = 'E ' & string(!z[1] + !eas / 2) & 'N $!z[2] U $!z[3]'
+--q var !e1 !e2
+
+--var !col coll all within $!from to $!to
+var !col coll all from draw
+
+!coll = array()
+do !i values !col
+    !typ = type of $!i
+    !coll.append(' $!i')
+enddo
+
+!listi = object file('C:\UK3712_PDMS\Makros\draftin.csv')
+!listi.writefile('overwrite',!coll)
+!listi.close()
+
+syscom 'C:\UK3712_PDMS\Makros\draftin.csv &'
+
+
+------------------------------------------------------------
+var !bol coll all ADDE for ce
+do !j values !bol
+    $!j delete ADDE
+enddo
+
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+
+--add all from !readList
+do !i values !readList
+    new ADDE
+    idname $!i
+enddo
+idli
+
+
+------------------------
+
+cdlimits 'E 547200 N 152712.5 U -13000 to E 567200 N 178712.5 U -6500'

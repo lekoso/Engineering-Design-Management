@@ -1,0 +1,60 @@
+!sys = '1DVF'
+!vo[1] = 'Plate Reference, East(X), North (Y), Height (Z), Support Name, Room, Level, Support Type, Dtata Sheet, Page, Fire Rated, Designer'
+!site = '/MW-1HF, /MW-1HM,  /MW-1HG,  /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+
+!format = object format()
+!format.dp = 2
+
+do !i values !sites
+    var !hvac coll all hvac for $!i
+    do !j values !hvac
+        !nam = name of $!j
+        if matchw('$!nam','*$!sys*') then
+            var !atta coll all atta for $!j
+            do !k values !atta
+                !name = name of $!k
+                !des = :Second_Mod of hvac of $!k
+                !st = stext of $!k
+                !sup = '/' & '$!st'
+                if matchw('$!name','*DATUM*') EQ true then
+                    !zone = name of parent of $!sup
+                    handle ANY
+                        $p $!name $!sup
+                        skip
+                    endhandle                
+                    !typ = :supporttype of $!sup
+                    !data = :supportdata of $!sup
+                    !pag = :Support_PageNum of $!sup
+                    !fire = :firerate of $!sup
+                    var !room gtroom of $!sup
+                    !room = name of gtroom of $!sup
+                    handle ANY
+                        !room = 'NA'
+                    endhandle
+
+                    if !room eq 'NA' then
+                        !lev = 'NA'
+                    else
+                        !lev = !room.trim().substring(6,2)
+                    endif
+
+                    var !fit coll all FITT for $!sup
+                    do !l values !fit
+                        !namf = name of $!l
+                        !pos = pos of $!l wrt world
+                        !x = string(!pos.east, !format)
+                        !y = string(!pos.north, !format)
+                        !z = string(!pos.up, !format)
+                        !vo.append('$!namf, $!x, $!y, $!z, $!sup, $!room, $!lev, $!typ, $!data, $!pag, $!fire, $!des')
+                    enddo
+                endif
+            enddo
+        endif
+    enddo
+enddo
+
+!col = object file('C:\UK3712_PDMS\Makros\Duct_Supports\Co-ord.csv')        
+!col.writefile('overwrite',!vo)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\Duct_Supports\Co-ord.csv &'

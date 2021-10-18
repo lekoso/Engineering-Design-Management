@@ -1,0 +1,270 @@
+
+
+
+setup form !!Draftin dialog dock
+
+!this.formtitle  = 'DRAFT Tools'
+
+--36.8 height 13.8  
+
+--#region Gadgets 
+frame.General 'Supports to Drawlist' at x0.88 y0.1  width 
+    button .button1 'Select HVAC or Branch' at x0.88 y0.1 callback '!this.item()' width 16.8 height 1.5   
+    button .button2 'Select VIEW' at x20.24 y0.1 callback  '!this.viu()' width 16.8 height 1.5   
+    button .button3 'Add Supports to Drawlist' at xmin.button1 y2  callback '!this.drawlist()'width 36.16 height 1.5   
+    button .button4 'Add Labels' at xmin.button1 ymax.button3 + .4 callback '!this.labelo()' width 36.16 height 1.5
+    button .button7 'Remove all Labels' at xmin.button1 ymax.button4 + .4 callback '!this.remo()' width 36.16 height 1.5
+    --button .button6 'Add Penetration Ref.' at xmin.button2 ymax.button3 + .4 callback '!this.pene()' width 16.8 height 1.5
+    --button .button7 'SBFI ID' at xmin.button1 ymax.button6 + .4 callback '!this.sbfit()' width 16.8 height 1.5
+    --button .button8 'Remove (EDF) items' at xmin.button6 ymax.button6 + .4 callback '!this.remEDF()' width 16.8 height 1.5
+exit $* 
+
+frame.Export 'Export Drawing' at xmin.General ymax.General + .3  width 
+    button .button5 'Select Sheet to Export' at xmin.button1 ymax.Export + .1 callback '!this.choo()' width 16.8 height 1.5
+    button .button6 'Export Drawing' at xmin.button2 ymin.button5 callback '!this.expor()' width 16.8 height 1.5
+exit $*   
+
+--frame.mto 'MTO' at xmin.Export ymax.Export + .3  width 
+    --button .button8 'Generate MTO' at xmin.button1 ymin.mto + 0.1 callback '!this.bom()' width 36.16 height 1.5
+--exit $*
+
+   ----------------------------------------------------------------------------------------------
+
+define method .item()
+    if !!CE.type eq 'HVAC' or !!CE.type eq 'BRAN' then
+        !this.button1.tag = !!CE.name
+        !this.button1.Background = 'grey'
+    else
+        !!Alert.Error('Please select HVAC or Branch')
+        !this.button1.tag = 'Select HVAC or Branch'
+        !this.button1.refresh()
+        !this.button1.Background = 0
+    endif       
+endmethod
+
+---------------------------------------------------------------------------------------------------------
+
+define method .viu()
+    if !!CE.type eq 'VIEW' then
+        !this.button2.Background = 'grey'
+        !this.button2.tag = !!CE.name
+    else
+        !!Alert.Error('Please select VIEW')
+        !this.button2.tag = 'Select VIEW'
+        !this.button2.refresh()
+        !this.button2.Background = 0
+    endif       
+endmethod
+--------------------------------------------------
+define method .drawlist()
+    !vu = !this.button2.tag
+    !dl = name of idln of $!vu
+    !ite = !this.button1.tag
+    var !atta coll all atta for $!ite
+    $!dl
+        
+    ----remove all existing STRU
+    var !ad coll all ADDE for ce
+        do !k values !ad
+            $!k
+            if type of idname eq 'STRU' then
+                delete ADDE
+            endif
+        enddo
+        
+    do !i values !atta
+        !name = name of $!i
+        if matchw('$!name','*DATUM*') EQ true then
+            !stext = stext of $!i
+            !sup = '/' & !stext
+            new adde idna $!sup
+        endif
+    enddo
+    $!vu
+    auto $!dl
+    update all
+
+endmethod
+
+-----------------------------------------------
+define method .labelo()
+
+!nam = !this.button2.tag
+$p $!nam
+var !del coll all glab for $!nam
+    do !i to !del.size()
+        $!del[$!i]
+        delete glab
+    enddo
+$!nam
+
+var !lab vscan for all (STRT DAMP BRCO CAP MESH TAPE BEND OFST SILE TRNS FLEX HFAN STRU SKIR) in $!nam
+2
+do !i values !lab
+    new glab
+    Ddname $!i
+    --Nppt 2
+    Gbox 2mm
+    Lterminator Dots
+    Cheight 4mm
+    Tsize 3mm
+    Font 5
+    Adegrees 0
+    Btext '#:isoseq'
+    LLStyle DashDot 
+    Justification Centre
+    Txcolour Cyan 
+    LLColour Cyan
+    LFColour Cyan
+    
+    if type of $!i eq 'BRCO' then
+        on p3 of $!i
+    endif
+    
+    if type of $!i eq 'BEND' then
+        on p0 of $!i
+    endif
+    
+    if type of $!i eq 'STRU' then
+        Btext '#NAME(C2:)'
+        Lframe false
+        Lterminator Dots
+        LLStyle TChained 
+        Txcolour Yellow 
+        LLColour Yellow
+        Font 2005        
+    endif
+
+enddo
+
+--SPREAD REMOTE NOROT
+--Spread Remote norot Margin -20 
+SPREAD REMOTE OMIT TOP bottom margin -50
+
+update all
+$!nam
+
+endmethod
+
+---------remove labels
+
+define method .remo()
+    !vui = !this.button2.tag
+
+    var !del coll all glab for $!vui
+    do !i to !del.size()
+        $!del[$!i]
+        delete glab
+    enddo
+endmethod
+
+-----------------------------------------------
+define method .choo()
+    if !!CE.type eq 'SHEE' then
+        !this.button5.tag = !!CE.name
+        !this.button5.Background = 'grey'
+    else
+        !!Alert.Error('Please select Sheet')
+        !this.button5.tag = 'Select HVAC to Export'
+        !this.button5.refresh()
+        !this.button5.Background = 0
+    endif       
+endmethod
+
+
+define method .expor()
+    !nan = !this.button5.tag
+    !nan = !nan.replace('/','_')    
+    !fil = '/C:/PDMS/' & !nan & '.dxf'
+    !sc = 1 / vscale of 1
+    
+    plot shee dxf $!fil scaleup $!sc over
+    
+    $P Sheet $!fil has been successfully exported.
+        
+    !fil = 'C:/PDMS/' & !nan & '.dxf'
+    
+    syscom '$!fil &'
+    
+endmethod
+
+
+----HVAC Spool BOM
+
+define method .bom()
+
+!item = !this.button1.tag
+!sys = !item.substring(2,4)
+!fil = !item.substring(2,11)
+!coll[1] = 'Line Number - ' & !fil
+!coll[2] = 'Part No, Type, Reference. No., Detailed Desc., Inlet L., Inlet W, Outlet L., Outlet W., Length, Room No.' 
+
+
+   var !all coll all (STRT DAMP BRCO CAP MESH TAPE BEND OFST SILE TRNS FLEX HFAN SKIR) for $!item
+    do !i values !all
+        !ite = :isoseq of $!i
+        !type = type of $!i
+        var !refi refno of $!i
+        !ref = !refi.split('=')
+        !deDesc = Splt of $!i
+        var !att desp of $!i
+        !atti = !att.split(' ')
+        --q var !atti[2]
+        !inletL = !atti[2].split('m')
+        !inletW = !atti[3].split('m')
+        
+        if !inletW[1] eq 'DIAM' then
+            !inletW[1] = !inletL[1]
+        endif
+            
+        !outletL = !atti[4].split('m')
+        !outletW = !atti[5].split('m')
+        
+        if !outletW[1] eq 'DIAM' then
+            !outletW[1] = !outletL[1]
+        endif
+            
+         if type of $!i eq 'BEND' then
+            !len = split(string(actradius of $!i),'m')
+        elseif type of $!i eq 'BRCO' then
+            !len = !atti[7].split('m')
+        else             
+            !len = !atti[6].split('m')
+        endif 
+        
+        if type of $!i eq 'SKIR' then
+            !deDesc = 'Penetration Spool Plate'
+            !outletL = !atti[41].split('m')
+            !outletW = !atti[42].split('m')
+            !len = !atti[15].split('m')
+        endif
+        
+        !room = name of gtroom of $!i
+        
+        handle ANY
+            !room = name of gtroom of $!j
+                handle ANY
+                    !room = 'unset'
+                endhandle
+        endhandle
+                   
+        !coll.append('$!ite[1],$!type,$!ref[2],$!deDesc,$!inletL[1],$!inletW[1],$!outletL[1],$!outletW[1],$!len[1],$!room')
+        
+    enddo
+
+!file = 'Y:\04-Mechanical\041-Data\13_HVAC_Spools\' & !sys & '\BOM_csv\' & !fil & '.csv'
+
+!col = object file('$!file')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom '$!file &'
+
+endmethod
+
+exit 
+
+--#endregion Form definition 
+ 
+--#region Methods 
+--#endregion Methods 
+--#endregion uPML Form Designer generated code 

@@ -1,0 +1,332 @@
+﻿---Routine to create DRWG in Darft as per HVAC Line Number
+---This is generate HVAC Spools for HOPC UK3712
+
+!listi = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Makros\list.txt')
+!readList = !listi.readfile()
+
+do !Num values !readList        
+    
+    ----Creating Drawing
+    NEW DRWG $!Num
+    SIZE 594mm 420mm
+    FONT 5
+    UCOD mm  Distance   mm  Bore Nominal
+    DTER Arrows
+    LTER Off
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TITL 'A2 HVAC Drawing'
+    AUTH 'IHC_LOdukoya'
+    TXCOLO 1
+    NLSTYL Solid
+    NLCOLO 1
+    LLSTYL Solid
+    LLCOLO 1
+    LFSTYL Solid
+    LFCOLO 1
+    DLSTYL Solid
+    DLCOLO 1
+    PLSTYL Solid
+    PLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    POSFOR ENU
+    
+    ---------Pause to Create Library----------------------
+    NEW LIBY $!Num/LIBY
+    SIZE 1189mm 841mm
+    UCOD mm  Distance   mm  Bore Nominal
+    FONT 5
+    DTER Arrows
+    LTER Off
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TXCOLO 1
+    NLSTYL Solid
+    NLCOLO 1
+    LLSTYL Solid
+    LLCOLO 1
+    LFSTYL Solid
+    LFCOLO 1
+    DLSTYL Solid
+    DLCOLO 1
+    PLSTYL Solid
+    PLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    POSFOR ENU
+    
+    NEW PLLB $!Num/S1/V1/PLANES
+    NEW DLLB $!Num/DRAWLIST
+    NEW IDLIST $!Num/DRAWLIST/DRWG
+    NEW TRLB $!Num/TAGRULE
+    
+    --------Continue Drawing Creation
+    
+    $!Num
+    IDLN IDLIST $!Num/DRAWLIST/DRWG
+    RRSF /HVAC-PIPING-GA-REP
+    BSRF BACKINGSHEET /TT/DRA/MAS/BACKS/MET/A2
+    
+    ---------Create Sheet---------------------------------------------------
+    
+    NEW SHEET $!Num/S1
+    SIZE 594mm 420mm
+    TITL 'A2 HVAC Drawing'
+    POSFOR ENU
+    BSRF BACKINGSHEET /TT/DRA/MAS/BACKS/MET/A2
+    IDLN IDLIST $!Num/DRAWLIST/DRWG
+    
+    ------Create View----------------------------------------------------------
+    
+    NEW VIEW $!Num/S1/V1
+    DIR W 45 N 35.26 D
+    THPO E 565237.5mm N 172712.5mm D 7197.5mm
+    VSCA 0.0922
+    ATOL 1
+    VTYP Universal HLine
+    SIZE 437.8968mm 348.516mm
+    XYPS X 236.9466mm Y 227.808mm
+    LFRA true
+    NLSTYL Solid
+    NLCOLO 8
+    VGAP 0mm
+    TITL 'View Looking D'
+    POSFOR ENU
+    
+    RRSF /HVAC-PIPING-GA-REP
+    IDLN IDLIST $!Num/DRAWLIST/DRWG
+    
+    -----Setting View's Dimnesion Layer Attributes------------------------------------------------------
+    
+    NEW LAYER $!Num/S1/V1/USER_Dims
+    PURP DIMA
+    UCOD mm  Distance   mm  Bore Nominal
+    FONT 5
+    LTER Off
+    JUST Left
+    ALIGN Bbody
+    DTER Arrows
+    TSIZ 3mm
+    CHOS 6mm
+    ASUB 0degree
+    PJUS Towards
+    OSHT 2mm
+    PLCL 0mm
+    DOFF 25mm
+    DMSP 0mm
+    DIR E
+    CHEI 3mm
+    LLEA true
+    LFRA true
+    LSHA Straight
+    GBOX 1mm
+    CSPA 0
+    LSPA 0
+    LLCL 0mm
+    XYPS 25mm 25mm
+    BPOF 0mm 0mm
+    BLNK false
+    BMAR 0mm
+    FTER Default
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TXCOLO 10
+    NLSTYL Solid
+    NLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    LLSTYL Solid
+    LLCOLO 1
+    LFSTYL Solid
+    LFCOLO 1
+    DLSTYL Solid
+    DLCOLO 10
+    PLSTYL Solid
+    PLCOLO 10
+    MSTYLE Off
+    MCOLOUR 1
+    CHSTYL Off
+    CHCOLO 1
+    POSFOR ENU
+    
+    -----Setting View's Label Layer Attributes------------------------------------------------------
+    
+    NEW LAYER $!Num/S1/V1/USER_Labs
+    PURP LABA
+    UCOD mm  Distance   mm  Bore Nominal
+    FONT 5
+    LTER Off
+    JUST Left
+    ALIGN Base
+    DTER Arrows
+    TSIZ 3mm
+    CHOS 6mm
+    ASUB 0degree
+    PJUS Towards
+    OSHT 2mm
+    PLCL 0mm
+    DOFF 25mm
+    DMSP 0mm
+    DIR E
+    CHEI 3mm
+    LLEA true
+    LFRA true
+    LSHA Straight
+    GBOX 0mm
+    CSPA 0
+    LSPA 0
+    LLCL 0mm
+    XYPS 0mm 0mm
+    BPOF 0mm 0mm
+    BLNK false
+    BMAR 0mm
+    FTER Default
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TXCOLO 2
+    NLSTYL Solid
+    NLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    LLSTYL Solid
+    LLCOLO 2
+    LFSTYL Solid
+    LFCOLO 2
+    DLSTYL Solid
+    DLCOLO 1
+    PLSTYL Solid
+    PLCOLO 1
+    MSTYLE Off
+    MCOLOUR 1
+    CHSTYL Off
+    CHCOLO 1
+    POSFOR ENU
+    
+    -----Setting View's Notes Layer Attributes------------------------------------------------------
+    
+    NEW LAYER $!Num/S1/V1/USER_Notes
+    PURP NOTA
+    UCOD mm  Distance   mm  Bore Nominal
+    FONT 5
+    LTER Off
+    JUST Left
+    ALIGN Bbody
+    DTER Arrows
+    TSIZ 3mm
+    CHOS 6mm
+    ASUB 0degree
+    PJUS Towards
+    OSHT 2mm
+    PLCL 0mm
+    DOFF 25mm
+    DMSP 0mm
+    DIR E
+    CHEI 3mm
+    LLEA true
+    LFRA true
+    LSHA Straight
+    GBOX 1mm
+    CSPA 0
+    LSPA 0
+    LLCL 0mm
+    XYPS 25mm 25mm
+    BPOF 0mm 0mm
+    BLNK false
+    BMAR 0mm
+    FTER Default
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TXCOLO 1
+    NLSTYL Solid
+    NLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    LLSTYL Solid
+    LLCOLO 1
+    LFSTYL Solid
+    LFCOLO 1
+    DLSTYL Solid
+    DLCOLO 1
+    PLSTYL Solid
+    PLCOLO 1
+    MSTYLE Off
+    MCOLOUR 1
+    CHSTYL Off
+    CHCOLO 1
+    POSFOR ENU
+    
+    NEW VNOTE
+    XYPS X 236.9466mm Y 227.808mm
+    JUST Left
+    ALIGN Bbody
+    FONT 5
+    BLNK false
+    BMAR 0mm
+    CHEI 3mm
+    CSPA 0
+    LSPA 0
+    TXCOLO 1
+    NLSTYL Solid
+    NLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    MSTYLE Stop Scale 1
+    MCOLOUR 1
+    
+    -----Setting View's Tag Layer Attributes------------------------------------------------------
+    
+    NEW LAYER $!Num/S1/V1/USER_Tags
+    PURP TAGA
+    UCOD mm  Distance   mm  Bore Nominal
+    FONT 5
+    LTER Off
+    JUST Left
+    ALIGN Bbody
+    DTER Arrows
+    TSIZ 3mm
+    CHOS 6mm
+    ASUB 0degree
+    PJUS Towards
+    OSHT 2mm
+    PLCL 0mm
+    DOFF 25mm
+    DMSP 0mm
+    DIR E
+    CHEI 4mm
+    LLEA true
+    LFRA true
+    LSHA Straight
+    GBOX 1mm
+    CSPA 0
+    LSPA 0
+    LLCL 0mm
+    XYPS 25mm 25mm
+    BPOF 0mm 0mm
+    BLNK false
+    BMAR 0mm
+    FTER Default
+    PCODE mms to 0 dpls  Inches to 1 dpls  Fractions to 32 ths  Angles to 1 dpls
+    NTEXT unset
+    TXCOLO 4
+    NLSTYL Solid
+    NLCOLO 1
+    FSTYLE Off
+    FCOLOUR 1
+    LLSTYL Solid
+    LLCOLO 4
+    LFSTYL Solid
+    LFCOLO 4
+    DLSTYL Solid
+    DLCOLO 1
+    PLSTYL Solid
+    PLCOLO 1
+    MSTYLE Off
+    MCOLOUR 1
+    CHSTYL Off
+    CHCOLO 1
+    POSFOR ENU
+
+enddo
+
+alpha req clear

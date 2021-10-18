@@ -1,0 +1,129 @@
+----Assign Flange Reference
+
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!dat = array()
+!dup = array()
+
+do !i values !readList
+    var !it coll all (STRT BRCO CAP ELBOW TAPER BEND OFST TRNS) for $!i
+    do !j values !it
+        var !refi refno of $!j
+        !refo = !refi.split('=')
+        !ref = !refo[2]
+        !ty = type of $!j
+        !line = hvac of $!j
+        var !des desp of $!j
+        !desi = !des.split(' ')
+
+        !in = !desi[21]
+        !out = !desi[24]
+        !inf = !desi[58]
+        !outf = !desi[59]
+
+        if !inf eq 'FLAT' then
+            !flangeRefA = 'null'
+            !flangeRefB = '$!ref' & '/' & '$!out' & 'B'
+        elseif !outf eq 'FLAT' then
+            !flangeRefB = 'null'
+            !flangeRefA = '$!ref' & '/' & '$!in' & 'A'
+        else
+            !flangeRefA = '$!ref' & '/' & '$!in' & 'A'
+            !flangeRefB = '$!ref' & '/' & '$!out' & 'B'
+        endif
+
+
+        if !ty eq 'CAP' then
+            !flangeRefA = 'null'
+            !out = !desi[21]
+            !flangeRefB = '$!ref' & '/' & '$!out' & 'B'
+        elseif !ty eq 'BRCO' then
+            var !ref :refnumb of $!j
+            !flangeRefA = 'null'
+            !out = !desi[27]
+            !flangeRefB = '$!ref' & '/' & '$!out' & 'C'
+
+            if !dup.find('$!flangeRefB').empty() eq false then
+                !flangeRefB = '$!ref' & '/' & '$!out' & 'D'
+            endif
+
+        endif
+        $!j
+        :FlangeRefA '$!flangeRefA'
+        :FlangeRefB '$!flangeRefB'
+        !dup.append('$!flangeRefA')
+        !dup.append('$!flangeRefB')
+    !dat.append(' $!ref,$!ty,$!flangeRefA, $!flangeRefB')
+
+    enddo
+enddo
+
+!data = object file('C:\UK3712_PDMS\Makros\data.csv')        
+!data.writefile('overwrite',!dat)
+!data.close()
+
+syscom 'C:\UK3712_PDMS\Makros\data.csv &'
+
+-----Flange Schedule Generation
+
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!dat[1] = ('Flange Reference, Duct Reference, PDMS Duct Type, Line Number, Flange Height, Duct Length A (mm), Duct Width B (mm), Level')
+
+!format = object format()
+!format.dp = 0
+
+do !i values !readList
+    var !it coll all (STRT BRCO CAP ELBOW TAPER BEND OFST TRNS) for $!i
+    do !j values !it
+        !fA = :flangerefa of $!j
+        !fB = :flangerefB of $!j
+        var !roo gtroom of $!j
+        !ref = split('$!j','=')
+        !hva = name of hvac of $!j
+        !typ = type of $!j
+        !sz = desp[21] of $!j
+
+        if !roo neq 'unset' then
+            !room = !roo.substring(6,2)
+        endif
+
+        if !fA neq 'Unset' then
+            if  !fA neq 'null' then
+                !inL = string(desp[2] of $!j, !format)
+                !inW = string(desp[3] of $!j, !format)
+                !dat.append('$!fA, $!ref[2], $!typ, $!hva, $!sz, $!inL, $!inW, $!room')
+            endif
+        endif
+
+        if !fB neq 'Unset' then
+            if !fB neq 'null' then
+                if !typ eq 'BRCO' then
+                    !outL = string(desp[41] of $!j, !format)
+                    !ref[2] = :refnumb of $!j
+                    !outL = string(desp[41] of $!j, !format)
+                    !outW = string(desp[42] of $!j, !format)
+                    !sz = desp[70] of $!j
+                else
+                    !outL = string(desp[4] of $!j, !format)
+                    !outW = string(desp[5] of $!j, !format)
+                endif
+                
+                if !typ eq 'TRNS' then
+                    !outW = !outL
+                endif
+                !dat.append('$!fB, $!ref[2], $!typ, $!hva, $!sz, $!outL, $!outW, $!room')
+            endif
+        endif
+    enddo
+enddo
+
+!data = object file('C:\UK3712_PDMS\Makros\data.csv')        
+!data.writefile('overwrite',!dat)
+!data.close()
+
+syscom 'C:\UK3712_PDMS\Makros\data.csv &'
+
+
+
+

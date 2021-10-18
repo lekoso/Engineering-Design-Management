@@ -1,0 +1,277 @@
+
+setup form !!Status dialog dock
+
+!this.formtitle  = 'Admin Statusing'
+!this.initcall   = '!this.init()'
+
+--GADGETS
+
+frame .Status 'Status' at x0.88 y0.92
+    option .option1 '' at xmin.Status +0.1 ymin.Status + 0.2  width 8 
+    button .getStatus 'HVAC & Piping Status' at xmin.Status +0.1  ymax.option1 + 0.5 callback '!this.statusGen()' width 14 height 1.5 
+    button .equiStatus 'Equipment' at xmax.getStatus + 1.5  ymax.option1 + 0.5 callback '!this.EquiStat()' width 14 height 1.5       
+exit 
+
+frame .Navis 'Navi_Export' at xmin.Status ymax.Status
+    button .button2 'Navis Export List Gen' at xmin.Navis ymax.Navis + 0.2  callback '!this.ExportListGen()' width 14 height 1.5   
+    button .button3 'Start Navis Export' at xmax.button2 + 1.5 ymin.button2 callback '!this.NavisExport()' width 14 height 1.5 
+exit $* Navis_Export 
+
+------------------------------------------------------------------------ 
+-- 
+
+define method .init()
+    !option = array()
+    !option[1] = '1DVF'
+    !option[2] = '1DVM'
+    !option[3] = '2DVF'
+    !option[4] = '2DVM'
+    !option[5] = 'DVT'
+
+    !this.option1.dtext = !option
+
+endmethod
+
+-- Method:     status_Gen 
+-- 
+-- Description:  
+-- 
+------------------------------------------------------------------------ 
+define method .statusGen() 
+
+    !modelStat = 0
+    !dataStats = 0
+    !clashStat = 0
+    !suppStat = 0
+
+    !system = !this.option1.val
+    !coll = array()
+    !coll[1] = 'Line Name,Type,Modelled to VFD,DataCon,Data Check,Clash,Approved,Support Status,Line Desc.,P&ID Number,Sheet Number, Revision, Revision date, Designer_I, Designer_II'
+
+    if !system eq 1 then
+        var !items coll all (PIPE HVAC) for  /MW-1HF /1DVF91
+        !items.append('/1DVF7201GL-')
+        !items.append('/1DVF7301GL-')
+        !items.append('/1DVF7401GL-')
+        !items.append('/1DVF7501GL-')
+        !items.append('/1DVF7207GL-')
+        !items.append('/1DVF7303GL-')
+        !items.append('/1DVF7402GL-')
+        !items.append('/1DVF7502GL-')
+        !items.append('/1DVF7602GL-')
+        !items.append('/1DVF7702GL-')
+        !items.append('/1DVF9111GL-')
+    endif
+
+    if !system eq 2 then
+        !items = array()
+        !ite = '/1DVM11,/1DVM15,/1DVM21,/1DVM31,/1DVM35,/1DVM41,/1DVM51,/1DVM55,/1DVM61,/1DVM62,/1DVM71,/1DVM72,/1DVM81,/1DVM82,/1DVM83,/9DVM91'
+        !item = !ite.split(',')
+            do !j values !item
+               var !thing coll all (PIPE HVAC) for $!j
+               !items.appendarray(!thing)
+           enddo  
+    elseif !system eq 4 then
+        !items = array()
+        !ite = '/2DVM11,/2DVM15,/2DVM21,/2DVM31,/2DVM35,/2DVM41,/2DVM51,/2DVM55,/2DVM61,/2DVM62,/2DVM71,/2DVM72,/2DVM81,/2DVM82,/2DVM83'
+        !item = !ite.split(',')
+            do !j values !item
+               var !thing coll all (PIPE HVAC) for $!j
+               !items.appendarray(!thing)
+           enddo  
+    elseif !system eq 5 then
+        !items = array()
+        !ite = '=21478/4,=29670/365,=29670/89,=29670/366,=21478/11,=21478/719,=29670/2,=37862/127,=21478/678,=21442/4,=29634/1,=20723/6,=20723/103,=20723/104,=20723/105,=20723/106,=20723/107,=20478/6155,=20478/6190,=36862/1,=36862/8,=36862/27,=36862/28,=21545/4,=20545/8039'
+        --!ite = '/0DVT81,/0DVT83,/0DVT84,/0DVT85,/0DVT86,/0DVT87,/2DVT41,/2DVT46,/2DVT66,/2DVT71,/2DVT76,/9DVT21,/9DVT26,/9DVT31,/9DVT36,/9DVT21,/9DVT31,/0DVT51,/0DVT56,/1DVT41,/1DVT46,/1DVT66,/1DVT76'
+        !item = !ite.split(',')
+            do !j values !item
+               var !thing coll all (PIPE HVAC) for $!j
+               !items.appendarray(!thing)
+           enddo 
+    endif
+
+    !size = !items.size()
+        
+        do !i values !items
+            !name = name of $!i
+            !model = :Modelled of $!i
+
+    ---Modeling Status Check
+            
+            if UpCase(!model) eq 'YES' then
+                !modelStat = !modelStat + 1
+            endif                
+            !datacon = :DataCon of $!i
+            !dataChec = :DataChec of $!i
+            
+            handle ANY
+                !dataChec = 'NA'
+            endhandle
+
+    ---DataCon Status Check
+            
+            if (UpCase(!datacon) eq 'YES') and (UpCase(!dataChec) eq 'NA') then
+                !dataStat = 'YES'
+                !dataStats = !dataStats + 1
+            elseif (UpCase(!datacon) eq 'YES') and (UpCase(!dataChec) eq 'YES') then
+                !dataStat = 'YES'
+                !dataStats = !dataStats + 1
+            endif
+           
+    --Clash Status Check        
+            !clash = :ClashCheck of $!i
+            if !clash neq 'No' then
+                !clashStat = !clashStat + 1
+            endif
+            
+    --Support Status        
+            !support = :SupportStatus of $!i
+                  
+            handle ANY
+                !support = 'NA'
+            endhandle
+            
+            if !support neq 'No' then
+                !suppStat = !suppStat + 1
+            endif
+            
+    -----------------------------------
+            !approved = :Approved of $!i
+            !pid = :PID_Num of $!i
+            !sheet = :PID_Sheet of $!i
+            !sheetNum = string(!sheet[1])
+            
+            handle ANY
+                !sheetNum = 'Undefined'
+            endhandle
+            
+            !rev = :PID_Rev of $!i
+
+            !desc = :Sys_Desc  of $!i
+            !type = type of $!i
+            !mod = :First_Mod of $!i
+            !modII = :Second_Mod of $!i
+            
+            handle ANY
+                !mod = 'NA'
+            endhandle
+            
+            !revDate = :Rev_Date of $!i
+            
+            handle ANY
+                !sheetNum = 'NA'
+            endhandle
+
+
+            
+            
+            !coll.append('$!name,$!type,$!model,$!datacon,$!dataChec,$!clash,$!approved,$!support,$!desc,$!pid,$!SheetNum,$!rev,$!revDate,$!mod,$!modII')
+        enddo
+
+    --------------------------------------------------------------------------
+        
+    !col = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Linelist\Linelist.csv')        
+    !col.writefile('overwrite',!coll)
+    handle ANY
+        $P file is already open
+    endhandle
+    !col.close()
+    syscom 'C:\Users\ihc_lodukoya\Desktop\Directory\Linelist\Linelist.csv &'    
+
+    !statModel = Nint(!modelStat / !size * 100)
+    !statDataCon = Nint(!dataStats / !size * 100)
+    !statClash = Nint(!clashStat / !size * 100)
+    !statSupp = Nint(!suppStat / !size * 100)
+
+    $P Perccentage of Line Modelled is $!statModel%
+    $P Perccentage of checked with Data Con & Data Checker is $!statDataCon%
+    $P Perccentage of Clash Checked is $!statClash%
+    $P Perccentage of Lines Supported is $!statSupp%
+    
+endmethod 
+------------------------------------------------------------------------ 
+-- 
+-- Method:     ExportList_Gen 
+-- 
+-- Description:  
+-- 
+------------------------------------------------------------------------ 
+define method .ExportListGen() 
+    --$m /C:\Users\ihc_lodukoya\Desktop\Directory\Navis\DVT\DVT_ExportList_Gen.txt
+    --$m /C:\Users\ihc_lodukoya\Desktop\Directory\Navis\1HF\1HF_ExportList_Gen.txt
+    --$m /C:\Users\ihc_lodukoya\Desktop\Directory\Navis\2HF\2HF_ExportList_Gen.txt
+    --$m /C:\Users\ihc_lodukoya\Desktop\Directory\Navis\2HM\2HM_ExportList_Gen.txt
+    --$m /C:\Users\ihc_lodukoya\Desktop\Directory\Navis\1HM\1HM_ExportList_Gen.txt
+    
+    $m/C:\Users\ihc_lodukoya\Desktop\Directory\Navis\Copyu.bat
+    
+endmethod 
+
+-------------------------------------------------
+define method .NavisExport()
+
+    !listi = object file('C:\Users\ihc_lodukoya\Desktop\Directory\Navis\DVT\DVT_Navis_Exportlist.txt')
+    !readList = !listi.readfile()
+    
+    handle ANY
+        !!Alert.Error('Please run Navis_Exportlist routine')
+        golabel /opin
+    endhandle
+
+    getwork
+
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\DVT\DVT_Navis_Export.txt
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\1HF\1HF_Navis_Export.txt
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\2HF\2HF_Navis_Export.txt
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\2HM\2HM_Navis_Export.txt
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\1HM\1HM_Navis_Export.txt
+    $m C:\Users\ihc_lodukoya\Desktop\Directory\Navis\Consolidated\Consolidated.txt
+
+    alpha req clear
+label /opin    
+endmethod 
+
+-----------------------------------------------------------------------------------
+
+define method .EquiStat()
+
+    !bol[1] = 'Name,Description-I,Description-II, P&ID Number, Sheet Number'
+    
+    if !this.option1.val eq 1 then
+        !setin = '1DVF'
+    elseif !this.option1.val eq 2 then
+        !setin = '1DVM'
+    elseif !this.option1.val eq 3 then
+        !setin = '2DVF'
+    elseif !this.option1.val eq 4 then
+        !setin = '2DVM'        
+    elseif !this.option1.val eq 5 then
+        !setin = 'DVT'
+    endif
+
+        
+    var !kol coll all equi for /MW-1HF /MW-1HM /MW-1HG /MW-1HT /MW-HY /MW-HZ /MW-2HF /MW-2HM /MW-2HG
+
+        do !i values !kol
+            !nam = name of $!i
+            if matchw('$!nam','*$!setin*') or matchw('$!nam','*1L*') then
+                !desc = :EquiDesc of $!i
+                !desc2 = :Sys_Desc of $!i
+                !pid = :PID_Num of $!i
+                !pidshit = :PID_Sheet of $!i
+                !shitNum = string(!pidshit[1])
+                    handle ANY
+                        !shitNum = 'null'
+                    endhandle
+                !bol.append('$!nam,$!desc2,$!desc,$!pid,$!shitNum')
+            endif
+        enddo
+        
+        !phil = 'C:\Users\ihc_lodukoya\Desktop\Directory\Linelist\' & !setin & '_EquiList.csv'
+        !col = object file('$!phil')        
+        !col.writefile('overwrite',!bol)
+        syscom '$!phil &'
+endmethod 
+
+
+exit

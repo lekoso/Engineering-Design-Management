@@ -1,0 +1,85 @@
+setup form !!splitbranch  dialog dock
+title 'Split Branches'
+
+frame.General '' at x0.88 y0.1  width 
+    button .bra 'Select branch to be split' at x0.88 y0.1 callback '!this.brani()' width 16.8 height 1.5
+    button .spl 'Select split item' at xmax.bra + 0.2  ymin.bra callback '!this.splt()' width 16.8 height 1.5
+    button .cut 'Split Branch' at xmin.bra ymax.bra + 0.2 callback '!this.cutt()' width 34.68 height 1.5
+    --text .hierar 'OLDBRAN'  width 24 is STRING
+    --text .newname 'NEWNAME'  width 24 is STRING
+    --text .firstmem 'FIRSTMEM'  width 24 is dbref
+    --button .copy 'copy name'  callback '!this.copy()' 
+   -- button .doit   'DOIT' callback '!this.doit()' 
+    --button .cancel | DISMISS |   callback '!this.cancel()' cancel
+exit $* 
+
+--define  method .brani()
+--    if (!!ce.type ne 'BRAN' ) then
+--         !!alert.error('Please select a Branch')
+--         break
+--     else
+--        !this.bra.tag = !!CE.name
+--        !this.bra.Background = 'grey'
+--    endif
+--endmethod
+--
+--define  method .splt()
+--    if (!!CE.owner.type ne 'BRAN') and (!!CE.owner.name ne !this.bra.tag ) then
+--         !!alert.error('Please select an item from a branch')
+--     else
+--        !this.spl.tag = !!CE.type
+--        !this.spl.Background = 'grey'
+--    endif
+--endmethod
+--
+--define  method .copy()
+-- !this.newname.val = !this.hierar.val
+-- 
+--endmethod  
+--define method .cancel()
+--  
+--  kill !!splitbranch
+--  
+--endmethod
+--
+--define method .cutt()
+--    
+--    !ans = !!Alert.Question('Are you sure to continue? This action is not reversible')
+--    
+--    if !ans eq 'YES' then
+--        var !o order
+--        bran
+--        var !oldref ref
+--        var !oldnam name
+--        new bran copy prev
+--        var !nuref ref
+--        !nunam = !oldnam & '_NEW'
+--        name $!nunam       
+--       
+--        --COUNT AND INSERT INTO NEW BRANCH
+--        $!oldnam
+--        do !i from 1 to memb count
+--            if( !i lt $!o ) then
+--                $!nunam
+--                1
+--                var !t type
+--                delete $!t
+--            else
+--                $!oldnam
+--                $!o
+--                var !t type
+--                delete $!t
+--            endif
+--        enddo
+--       
+--        --RECONNECT NEW BRANCH TO OLD BRANCH
+--        $!nunam
+--        conn ph to first memb
+--        $!oldnam
+--        conn pt to ph of $!nunam
+--
+--    endif
+--
+--endmethod
+
+exit

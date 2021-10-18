@@ -1,0 +1,90 @@
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!vol[1] = 'Support Name, Line Number, Duct Cross Section Length A, Duct Cross Section Width B, Support Type, Support Data Sheet, Data Page,Room, Wrap, Approved, Threaded Rod Length,(Actual) Top & Bottom Bearer Dimnension D,(Calculated)Top & Bottom Bearer Dimnension D, Soffat to Duct Bottom Dimension  E, Threaded Rods Distance, Fire Rating'
+
+!format = object format()
+!format.dp = 0
+!firs = array()
+
+do !j values !readList    
+    !rod = array()
+    !pfc = array()
+    var !sec coll all SCTN for $!j
+    var !fitt coll all FITT for $!j
+    !fit = pos of $!fitt[1] wrt world
+    !fitu = !fit.up
+    !desp = desparam of $!fitt[1]
+    !desp.sort()
+    !rod1 = array()
+    do !n values !sec
+        var !sp spref of $!n
+        !poss = posstart of $!n wrt world
+        !pose = posend of $!n wrt world
+        !z1 = !poss.up
+        !e1 = !poss.east
+        !n1 = !poss.north
+        !z2 = !pose.up
+        !e2 = !pose.east
+        !n2 = !pose.north
+        !leng = abs(!z2 - !z1 + !e2 - !e1 + !n2 - !n1)
+        !len = string(!leng, !format)
+
+        if matchw('$!sp','*ROD*') then
+            !rod.append('$!len')
+            !rod1.append(!e1)
+            !rod1.append(!n1)
+        elseif matchw('$!sp','*PFC*') then
+            !pfc.append('$!len')
+            !one = !fitu - !z1 - 17.3 + !desp[1]
+            !two = !fitu - !z2 - 17.3 + !desp[1]
+            !firs.append(!one)
+            !firs.append(!two)
+        endif
+
+    enddo
+
+    !width = real(string(abs(!rod1[1] +  !rod1[2] - !rod1[3] - !rod1[4]), !format))
+    !pfc2 = real(string(abs(!rod1[1] +  !rod1[2] - !rod1[3] - !rod1[4]) + 70, !format))
+    !firs.sort()
+    !rod.unique()
+    !pfc.unique()
+
+    if !rod.size() gt 1 or !pfc.size() gt 1 then
+        $p $!j
+        --q var !rod !pfc
+    endif
+    
+    !val = string(!firs.last(), !format)
+    !rod[1] = string(real(!rod[1]), !format)
+    !pfc[1] = string(real(!pfc[1]), !format)
+    !atta = '$!j' & '/DATUM'
+    !despi = desp of $!atta
+    !despi.sort()
+    !lent = string(!despi.last(), !format)
+    !bret = string(!despi[(!despi.size() - 1)], !format)
+    !hvac = name of hvac of $!atta
+    !typ = :supporttype of $!j
+    !data = :supportdata of $!j
+    !pag = :Support_PageNum of $!j
+    !wrap = :Wrap of $!j
+    !apruv = :Approved of $!j
+    !fire = :firerate of $!j
+    var !room gtroom of $!j
+    !vol.append('$!j, $!hvac, $!lent, $!bret, $!typ, $!data, $!pag,$!room, $!wrap, $!apruv, $!rod[1],$!pfc[1],$!pfc2,$!val,$!width,$!fire')
+    !firs.clear()
+    !rod.clear()
+    !pfc.clear()
+    !rod1.clear()
+    !width = 0
+    --handle any
+    --    $P $!j
+    --endhandle
+enddo
+--
+!voll = object file('C:\UK3712_PDMS\Makros\vol.csv')        
+!voll.writefile('overwrite',!vol)
+!voll.close()
+
+syscom 'C:\UK3712_PDMS\Makros\vol.csv &'
+
+

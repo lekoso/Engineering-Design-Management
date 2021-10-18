@@ -1,0 +1,950 @@
+--ONE*********************************************************************************
+
+-------------------------------------------------------------------------------
+-- Macroname  : Klippin.pmlfrm
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+-- variables used :-
+-- 
+-------------------------------------------------------------------------------
+--$M/C:\Users\LO0FACFN\AppData\Local\CAO\PML\Working_form.txt
+
+setup form !!Klippin dialog dock
+
+
+  !Version =banner
+  if !version.short.matchwild('*11.6*') then
+    !New = TRUE        
+  else
+    !New = FALSE
+  endif
+
+  title | Lekan Clipping|
+  init  |!this.init()|
+
+  !this.cancelcall = |!this.cancel()|
+-- Define Bar Menu
+bar
+--!this.bar.add('Control','cntl')
+-- menu .CNTL
+--!this.cntl.add ('callback','Advanced...','Hide !!Klippin SHOW !!LeClipBoxadv')
+
+  frame .fa1 |Clip Box Size:|
+  path down
+  option .x |Clip Box Xlen (E)| call |!this.drawbox()| width 5
+  option .y |Clip Box Ylen (N)| call |!this.drawbox()| width 5
+  option .z |Clip Box Zlen (U)| call |!this.drawbox()| width 5
+  BUTTON .SetBox 'Set Box Size CE' at  ymax.z + .2 call |!this.setboxsize()|
+  exit
+ 
+  frame .fa2 at xmin .fa1 ymax .fa1 |Clip Box Position:| width 26
+  path down
+  text .e      |E| call |!this.posbox('key')| width 10 is real
+  text .n      |N| call |!this.posbox('key')| width 10 is real
+  text .u      |U| call |!this.posbox('key')| width 10 is real
+  text .inc    |Increment| width 6 is real
+  exit
+
+path down  
+
+  frame .f0 '' at xmin .fa1 ymax.fa2
+      toggle .UseWvol at ymin.f0 +.5 |Use Box Radius|  call |!this.TogUseWvol()|
+      text .BoxRadius at ymax.UseWvol +.2 |Select box radius|  tagwid 11  width 5 is real
+  exit
+ 
+path down
+
+  frame .f1 '' at xmin ymax.f0
+    path right
+    if !NEW then
+      rtog .clipon  |Clip On|  call |!this.clipon()|
+      rtog .clipoff |Clip Off| call |!this.clipoff()|
+    else
+      tog .clipon at ymin.f1 +.5 |Clip On|  call |!this.clipon()|
+      tog .clipoff |Clip Off| call |!this.clipoff()|
+    endif
+  exit
+  path down
+
+  button .ce at x 0 ymax+.5 |CE |     call |!this.posbox('ce')|
+  button .id at xmax ymin  |ID $@|    call |!this.posbox('id')|
+  button .idp at xmax ymin |ID PP $@| call |!this.posbox('idp')|
+
+  path down
+  button .ref at xmin .ce  |Refresh Clip View| call |!this.clipon()|
+  path down
+  button .lim at xmin .ce |Limits about Clip Box| call |!this.limit()|
+  path down
+  button .tow at xmin .ce  |Rotate about Clip Box| call |!this.rotate()|
+  path down
+
+frame .f2 '' at x 0 at ymax
+    path right
+    option .addrem  at ymin.f2 +0.5 width 3
+    option .type  width 5
+    button .AddWithin at xmin.addrem ymax.addrem  |Within Vol| call |!this.add()|
+    para .exclude at xmin.addwithin ymax .addwithin text |EXCLUDE|
+    toggle .excludeAl at xmax .exclude ymin .exclude |AL|
+    toggle .excludeGrid at xmax .excludeAl ymin .excludeAl |GRID|
+  exit
+
+
+--**********NEW**************
+
+  path down
+
+ path down
+  
+
+  frame .f3 '' width 25
+    path down
+    --button .ExpDraw |Export Drawlist| call |!!ExportDrawlist()| width 11
+    --button .ExpClip |Export ClipBox | call |!this.expclip()| width 11
+    button .cancel  |Dismiss|  call |!this.cancel()| width 11
+
+  exit
+  
+--------------------------------
+  path right
+  button .ep at xmax.e ymin.e |+| call |!this.posbox('e1')|
+  button .em at               |-| call |!this.posbox('e2')|
+  button .np at xmax.n ymin.n |+| call |!this.posbox('n1')|
+  button .nm at               |-| call |!this.posbox('n2')|
+  button .up at xmax.u ymin.u |+| call |!this.posbox('u1')|
+  button .um at               |-| call |!this.posbox('u2')|
+
+exit
+
+
+
+
+define method .Klippin()
+
+  !Type = 'All Pipe Equi Proposal Room Hvac Stru Subs Sctn Panel PNod Atta'
+  !this.type.dtext = !Type.split()
+  !AddRem = 'Add Rem'
+  !this.addrem.dtext = !AddRem.split()
+  !this.clipon.val  = FALSE
+  !this.clipoff.val = TRUE
+  !this.UseWvol.val = FALSE
+
+  !xyz = array()
+  do !l from 50 to 500 by 50
+    !xyz.append(|$!l|)
+  enddo
+  do !l from 1000 to 20000 by 500
+    !xyz.append(|$!l|)
+  enddo
+  do !l from 22000 to 50000 by 1000
+    !xyz.append(|$!l|)
+  enddo
+  do !l from 55000 to 100000 by 5000
+    !xyz.append(|$!l|)
+  enddo
+  do !l from 101000 to 250000 by 10000
+    !xyz.append(|$!l|)
+  enddo
+  !this.x.dtext = !xyz
+  !this.y.dtext = !xyz
+  !this.z.dtext = !xyz
+ 
+  colour aids green
+  clip box on
+  !this.x.val = 2
+  !this.y.val = 2
+  !this.z.val = 2
+  !this.e.val = 0
+  !this.n.val = 0
+  !this.u.val = 0
+  !this.BoxRadius.val = 500
+  !this.inc.val = 1000
+  colour aids green
+  clip box on
+--   clip xlen $!!Klippin.x
+--   clip ylen $!!Klippin.y
+--   clip zlen $!!Klippin.z
+  clip xlen $!this.x
+  clip ylen $!this.y
+  clip zlen $!this.z
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .init()
+
+ 
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .cancel()
+
+  !this.clipoff()
+  hide !!Klippin  clip box off
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .drawbox()
+
+  colour aids cyan
+  clip box on
+  clip xlen $!!Klippin.x
+  clip ylen $!!Klippin.y
+  clip zlen $!!Klippin.z
+  if !this.clipon.val then
+    !this.clipon()
+  endif
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .posbox(!x is STRING)
+
+  var !CUEL name
+  prec var 0 dp
+
+  if (!x eq |id|) then
+    prompt off
+    prompt load escape |Probe Element |
+      id@
+      handle (61,528)                        $*  User exit from submode
+        return
+      endhandle
+    prompt dismiss
+    prompt on
+  endif
+
+  if (!x eq |idp|) then
+    prompt off
+    prompt load escape |Probe Ppoint |
+      pin1 at idp@
+      handle (61,528)                        $*  User exit from submode
+        return
+      endhandle
+    prompt dismiss
+    prompt on
+--      var !this.e  PIN1E WRT /*
+--      var !this.n  PIN1N WRT /*
+--      var !this.u  PIN1U WRT /*
+    var !pin1e  PIN1E WRT /*
+    var !pin1n  PIN1N WRT /*
+    var !pin1u  PIN1U WRT /*
+    !this.e.val = !pin1e.real()
+    !this.n.val = !pin1n.real()
+    !this.u.val = !pin1u.real()
+    pin1 off
+    golabel /POS
+  endif
+
+  if (!x eq |key|) then
+     golabel /POS
+  endif
+
+  if (!x eq |e1|) then
+--      var !this.e ($!this.e + $!this.inc)
+    !this.e.val = !this.e.val + $!this.inc
+     golabel /POS
+  endif
+
+  if (!x eq |e2|) then
+--      var !this.e ($!this.e - $!this.inc)
+    !this.e.val = !this.e.val - $!this.inc
+     golabel /POS
+  endif
+
+  if (!x eq |n1|) then
+--      var !this.n ($!this.n + $!this.inc)
+    !this.n.val = !this.n.val + $!this.inc
+     golabel /POS
+  endif
+
+  if (!x eq |n2|) then
+--      var !this.n ($!this.n - $!this.inc)
+    !this.n.val = !this.n.val - $!this.inc
+     golabel /POS
+  endif
+
+  if (!x eq |u1|) then
+--      var !this.u ($!this.u + $!this.inc)
+    !this.u.val = !this.u.val + $!this.inc
+     golabel /POS
+  endif
+
+  if (!x eq |u2|) then
+--      var !this.u ($!this.u - $!this.inc)
+    !this.u.val = !this.u.val - $!this.inc
+     golabel /POS
+  endif
+
+  if (!this.UseWvol.val) then
+    !wvol = wvol ce
+    handle (2,201)                    $* Element i.e. PFITTING  does not have attribute WVOL
+      return error 2 |CE does not have a volume|
+    endhandle
+    !epos = ( !wvol[1] + !wvol[4] ) / 2
+    !npos = ( !wvol[2] + !wvol[5] ) / 2
+    !upos = ( !wvol[3] + !wvol[6] ) / 2
+    !xsiz =  !wvol[4] - !wvol[1] + 2 * !this.BoxRadius.val
+    !ysiz =  !wvol[5] - !wvol[2] + 2 * !this.BoxRadius.val
+    !zsiz =  !wvol[6] - !wvol[3] + 2 * !this.BoxRadius.val
+    !nrof = !this.x.dtext.size()
+    do !i from 1 to !nrof
+      if !this.x.dtext[!i].real() ge !xsiz then
+        break
+      endif
+    enddo
+    !this.x.val = !i
+    do !i from 1 to !nrof
+      if !this.y.dtext[!i].real() ge !ysiz then
+        break
+      endif
+    enddo
+    !this.y.val = !i
+    do !i from 1 to !nrof
+      if !this.z.dtext[!i].real() ge !zsiz then
+        break
+      endif
+    enddo
+    !this.z.val = !i
+    !this.drawbox()
+  else
+    !epos = !!ce.pos.wrt(world).east
+    handle (2,779)                             $* Method <ERROR>.WRT(<DBREF>) not found
+      return error 1 |CE does not have a position|
+    endhandle
+    !npos = !!ce.pos.wrt(world).north
+    !upos = !!ce.pos.wrt(world).up
+  endif
+
+
+--   var !this.e e wrt worl
+  !this.e.val = !epos
+--   var !this.n n wrt worl
+  !this.n.val = !npos
+--  var !this.u u wrt worl
+  !this.u.val = !upos
+
+  LABEL /POS
+
+  VAR!current  clip pos
+  VAR!new      |E $!this.e N $!this.n U $!this.u|
+  if (|$!current| ne |$!new|) then
+    clip at $!new
+  endif
+  if !this.clipon.val then
+    !this.clipon()
+  endif
+  $!CUEL
+  --!this.setboxsize()
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .clipon()
+
+  edit !!GPH3DDESIGN1.view givol
+    clip cap on
+    clip cap colour 10
+    clip enable
+  exit
+
+  !this.clipoff.val = FALSE
+  !this.clipon.val  = TRUE
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .clipoff()
+
+  edit !!GPH3DDESIGN1.view givol
+    clip disable
+  exit
+
+  !this.clipon.val  = FALSE
+  !this.clipoff.val = TRUE
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .limit()
+
+  var !pe  clip e
+  var !pn  clip n
+  var !pu  clip u
+  var !ce  clip xlen
+  var !cn  clip ylen
+  var !cu  clip zlen
+
+  edit !!GPH3DDESIGN1.view givol
+    limits local e($!pe- $!ce* .75) n($!pn- $!cn* .75) u($!pu- $!cu* .75) to  e($!pe+ $!ce* .75) n($!pn+ $!cn* .75) u($!pu+ $!cu* .75)
+  exit
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .add()
+
+  clock init
+  if (|$!this.e| eq ||) then
+    return error 1 |Pos E ?|
+  endif
+
+  if (|$!this.n| eq ||) then
+     return error 1 |Pos N ?|
+  endif
+
+  if (|$!this.u| eq ||) then
+     return error 1 |Pos U ?|
+  endif
+
+  if ($!this.e + $!this.n + $!this.u eq 0) then
+      return error 1 |Pos E0 N0 U0 is not allowed|
+  endif
+
+
+  prompt |processing  ADD WITHIN 3d VOLUME, Please be patient...|
+
+  var !min  |e| + str($!this.e - ($!this.x / 2)) + |n| + str($!this.n - ($!this.y / 2)) + |u| + str($!this.u - ($!this.z / 2))
+
+  var !max  |e| + str($!this.e + ($!this.x / 2)) + |n| + str($!this.n + ($!this.y / 2)) + |u| + str($!this.u + ($!this.z / 2))
+
+
+  if !this.type.selection().eq('All') then
+    !Type = '(BRAN REST EQUI SUBE SCTN PANE PNOD GENSEC WALL STWALL GWALL FLOOR SCREED SUBS BOX)'
+    !Addrem = !this.addrem.selection()
+    $!Addrem all $!Type within $!min to $!max
+
+-----***************NEW STUFFS I ADDED FOR HPC PROJECT
+
+ elseif !this.type.selection().eq('Proposal') then
+    var !coll collect all within $!min to $!max
+      do !r to !coll.size()
+        !oruko = namn of site of $!coll[$!r]
+          if matchw('$!oruko','*STUDY*') then
+		add $!coll[$!r]
+          else
+            skip
+          endif
+      enddo
+
+-----************END OF STUFFS I ADDED FOR HPC PROJECT
+
+  else
+    !Type = !this.type.selection()
+    !Addrem = !this.addrem.selection()
+    $!Addrem all $!Type within $!min to $!max
+  endif
+
+ 
+!currproj = current project
+     !sessset = !currproj.code()
+     
+if !sessset INSET (|SGS|)then
+REMOVE /AK
+REMOVE /AG
+ENDIF
+
+if !sessset INSET (|SDC|,|RTC|,|RTB|)then
+REMOVE /AG
+ENDIF
+
+if !this.excludeAl.val then
+if !sessset INSET (|SDC|,|RTC|,|RTB|)then
+  REMOVE /AL-AC
+  REMOVE /AL-AM
+  REMOVE /AL-AP
+  REMOVE /AL-AS
+  REMOVE /AL-AE
+  REMOVE /AL
+HANDLE (2,109)
+ENDHANDLE
+ENDIF
+
+elseif !sessset INSET (|SGS|)then
+  REMOVE /AL-PIPING
+  REMOVE /AL-CIVILS
+  REMOVE /AL-STRU
+  REMOVE /AL-REVIEW
+  REMOVE /AL
+HANDLE (2,109)
+ENDHANDLE
+ENDIF
+ 
+IF !sessset INSET (|COA|)then
+   REMOVE /AL-PIPING
+   REMOVE /AL-CIVILS
+   REMOVE /AL-STRUC
+   REMOVE /AL-REVIEW
+HANDLE (2,109)
+ENDHANDLE
+ENDIF
+IF !sessset INSET (|DAR|)then
+   REMOVE /AL00
+HANDLE (2,109)
+ENDHANDLE
+   REMOVE /BL00
+HANDLE (2,109)
+ENDHANDLE
+   REMOVE /CL00
+HANDLE (2,109)
+ENDHANDLE
+else
+   REMOVE /AL`
+HANDLE (2,109)
+ENDHANDLE
+endif
+
+if !this.excludeGrid.val then
+if !sessset INSET (|DAR|)then
+   REMOVE /AS00-GRID
+HANDLE (2,109)
+ENDHANDLE
+   REMOVE /BS00-GRID
+HANDLE (2,109)
+ENDHANDLE
+   REMOVE /CS00-GRID
+HANDLE (2,109)
+ENDHANDLE
+else
+   REMOVE /AS-GRID  
+HANDLE (2,109)
+ENDHANDLE
+  endif
+  endif
+ 
+  if !this.excludeGrid.val then
+if !sessset INSET (|SDC|,|RTC|,|RTB|)then
+   REMOVE /AX
+HANDLE (2,109)
+ENDHANDLE
+  endif
+  endif
+ 
+  !this.clipon()
+
+  prompt dismiss
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .rotate()
+
+  var !cp clip pos
+  edit !!GPH3DDESIGN1.view givol
+--     look towards $!cp
+    look through $!cp
+  exit
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .TogUseWvol()
+
+  if (!this.UseWvol.val) then
+    !this.UseWvol.val = TRUE
+  else
+    !this.UseWvol.val = FALSE
+  endif
+
+endmethod
+
+-----------------------------------------------------------------------------------
+define method .SetBoxSize()
+!Wvol = Wvol
+!Xlen =  !Wvol[4] - !Wvol[1]
+!Ylen =  !Wvol[5] - !Wvol[2]
+!Zlen =  !Wvol[6] - !Wvol[3]
+ 
+!EPos = !Wvol[4] - (!Xlen / 2)
+!NPos = !Wvol[5] - (!Ylen / 2)
+!UPos = !Wvol[6] - (!Zlen / 2)
+!this.e.val = !epos
+!this.n.val = !npos
+!this.u.val = !upos
+ 
+ 
+!Xlen2 = (!Xlen + 500) / 1000
+!Xlen = !xlen2.nint() * 1000
+ 
+if !Xlen.lt(50) then
+  !XLen = 50
+ 
+  elseif !XLen.gt(50) AND !XLen.lt(500) then
+!Xlen2 = (!Xlen + 50) / 50
+!Xlen = !xlen2.nint() * 50
+ 
+  elseif !XLen.gt(500) AND !XLen.lt(20000) then
+!Xlen2 = (!Xlen + 500) / 500
+!Xlen = !xlen2.nint() * 500
+ 
+elseif !XLen.gt(20000) AND !XLen.lt(50000) then
+!Xlen2 = (!Xlen + 1000) / 2000
+!Xlen = !xlen2.nint() * 2000
+
+elseif !XLen.gt(50000) AND !XLen.lt(100000) then
+!Xlen2 = (!Xlen + 1000) / 5000
+!Xlen = !xlen2.nint() * 5000
+
+elseif !XLen.gt(100000) AND !XLen.lt(250000) then
+!Xlen2 = (!Xlen + 1000) / 10000
+!Xlen = !xlen2.nint() * 10000
+
+elseif !XLen.gt(250000) then
+  !XLen = 250000
+endif
+
+!xle = !xlen.string().split('mm')
+
+!this.x.select('dtext',!Xle[1])
+ 
+!Ylen2 = (!Ylen + 500) / 1000
+!Ylen = !Ylen2.nint() * 1000
+
+if !Ylen.lt(1000) then
+  !YLen = 1000
+
+elseif !YLen.gt(20000) AND !YLen.lt(50000) then
+!Ylen2 = (!Ylen + 1000) / 2000
+!Ylen = !ylen2.nint() * 2000
+
+elseif !YLen.gt(50000) AND !YLen.lt(100000) then
+!Ylen2 = (!Ylen + 1000) / 5000
+!Ylen = !ylen2.nint() * 5000
+
+elseif !YLen.gt(100000) AND !YLen.lt(250000) then
+!Ylen2 = (!Ylen + 1000) / 10000
+!Ylen = !ylen2.nint() * 10000
+
+elseif !yLen.gt(250000) then
+  !YLen = 250000
+endif
+
+!yle = !Ylen.string().split('mm')
+!this.Y.select('dtext',!Yle[1])
+ 
+ 
+!Zlen2 = (!Zlen + 500) / 1000
+!Zlen = !Zlen2.nint() * 1000
+
+if !Zlen.lt(1000) then
+  !ZLen = 1000
+
+elseif !ZLen.gt(20000) AND !ZLen.lt(50000) then
+!Zlen2 = (!Zlen + 1000) / 2000
+!Zlen = !zlen2.nint() * 2000
+
+elseif !ZLen.gt(50000) AND !ZLen.lt(100000) then
+!Zlen2 = (!Zlen + 1000) / 5000
+!Zlen = !zlen2.nint() * 5000
+
+elseif !ZLen.gt(100000) AND !ZLen.lt(250000) then
+!Zlen2 = (!Zlen + 1000) / 10000
+!Zlen = !zlen2.nint() * 10000
+
+elseif !ZLen.gt(250000) then
+  !ZLen = 250000
+endif
+
+!zle = !Zlen.string().split('mm')
+!this.Z.select('dtext',!Zle[1])
+ 
+  VAR!current  clip pos
+  VAR!new      |E $!this.e N $!this.n U $!this.u|
+  if (|$!current| ne |$!new|) then
+    clip at $!new
+  endif
+  if !this.clipon.val then
+    !this.clipon()
+  endif
+!this.drawbox()
+!this.rotate()
+endmethod
+
+-----------------------------------------
+
+define method .expclip()
+
+!!TimeDateStamp()
+
+!sitecount = REAL()
+var !Projcode proj code
+var !Reviewpath evar pdmsuser
+
+-- create an array of elements
+
+var !elements collect all from drawlist
+
+$P $!elements[1]
+handle (2,752)
+  !messnodrawlist = 'Current Drawlist is Empty
+Please set up Design View.'
+  !message2 = !!alert.message('$!messnodrawlist', 0.35, 0.5)
+  RETURN
+endhandle
+
+!messfilename = 'Enter Review Export file Name ...
+e.g.:  DAR_$!!datestamp1'
+
+!message1 = !!alert.Input('$!messfilename','$!Projcode$n_$!!datestamp1_Current_Clip', 0.35, 0.5)
+
+RECREATE DISPLAY /$!Reviewpath\DESIGN_$!message1$n.disp over
+
+EXPORT FILE /$!Reviewpath\$!message1$n.rvm
+
+Representation level PIPE 6
+Representation level NOZZ 6
+Representation level STRU 6
+Representation Insulation Off
+Representation Obstruct off
+Representation Hole On
+Representation Pnode Off
+Representation Snode Off
+EXPORT HOLES ON
+
+--set autocolour on.
+EXPORT AUTOCOLOUR ON
+--reset all autocolour rules.
+EXPORT AUTOCOLOUR RESET
+
+pml reload form !!gphsettings
+!!gphsettings.load(False, true, false)
+------------------------------------------------------------------------------------
+-----------------------<<Set Autcolour Rules>>--------------------------------------
+------------------------------------------------------------------------------------
+-- for PIPE
+
+EXPORT AUTOCOLOUR ALL PIPE WI PURP OF ZONE EQ 'PIPE' COL 3
+EXPORT AUTOCOLOUR ALL PIPE WI PURP OF ZONE EQ 'PEXI' COL 63
+EXPORT AUTOCOLOUR ALL PIPE WI PURP OF ZONE EQ 'NMTO' COL 63
+-- Destruct, future and tie in
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'PDEM' COL 47
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'PFUT' COL 24
+
+-- for PIPE SUPPORTS
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'SUPP' COL 62
+
+-- for MECHANICAL
+
+--EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'MECN' COL 30
+--EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'MECE' COL 21
+--EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'MECF' COL 21
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'MECE' COL 12
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'MECF' COL 14
+EXPORT AUTOCOLOUR ALL (EQUI STRU) WI :PROGRESS LT 80         AND PURP OF ZONE EQ 'MECN' COL 2
+EXPORT AUTOCOLOUR ALL (EQUI STRU) WI :PROGRESS INSET (80,90) AND PURP OF ZONE EQ 'MECN' COL 36
+EXPORT AUTOCOLOUR ALL (EQUI STRU) WI :PROGRESS EQ 100        AND PURP OF ZONE EQ 'MECN' COL 5
+
+-- for HVAC
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'HVAC' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVEN' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVEE' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVEF' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVDN' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVDE' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVDF' COL 26
+
+-- for ELEC
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'ELEC' COL 20
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ELEN' COL 20
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ELEE' COL 20
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ELEF' COL 20
+
+-- for INST
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'INST' COL 40
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'INEN' COL 40
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'INEE' COL 40
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'INEF' COL 40
+
+-- for CIVIL
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'CONC' COL 13
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'CONC' COL 13
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'CONE' COL 18
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'CONF' COL 18
+
+-- for STRUCTURAL
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'STL' COL 18
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'STL' COL 18
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'STLE' COL 12
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'STLF' COL 12
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'STLD' COL 2
+
+-- for ARCHITECTURAL
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'ARCH' COL 13
+
+-- for INFRASTRUCTURE
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'GRAD' COL 17
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'PAVI' COL 15
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ROAD' COL 29
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'WALK' COL 15
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'FENC' COL 17
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'DIKE' COL 17
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'UNDG' COL  9
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'SEA'  COL 52
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'BLDG' COL 21
+
+-- for LAYOUT
+
+EXPORT AUTOCOLOUR ALL ZONE WI MATCHWILD(NAME,'/?L*EQUI') COL 24
+EXPORT AUTOCOLOUR ALL ZONE WI MATCHWILD(NAME,'/?L*') COL 12
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ARCH' COL 13
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'HVAC' COL 26
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'ELEC' COL 20
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF ZONE EQ 'INST' COL 40
+
+
+-- for UNDERGROUND
+
+EXPORT AUTOCOLOUR ALL WI PURPOSE OF SITE EQ 'UNDG' COL 9
+
+-- Do loop and print element list to file to file
+
+--do !X from 1 to $!elementcount
+--!elementname = !elementlist[!X]
+--    EXPORT $!elementname
+--    WRITE |Element $!elementname has been Exported to review.|
+--enddo
+
+if !this.excludeGrid.val then
+$p 'GRID=' $!this.excludeGrid.val
+EXPORT EXCLUDE ALL ZONE WITH PURP eq 'GRID'
+endif
+
+if !this.excludeAl.val then
+$p 'LAYOUT=' $!this.excludeAl.val
+
+EXPORT EXCLUDE ALL ZONE WI (MATCHWILD(NAME OF SITE,'/AL*') or MATCHWILD(NAME OF SITE,'/BL*') or MATCHWILD(NAME OF SITE,'/CL*'))
+endif
+
+if !this.type.selection().eq('All') then
+  !Type = '(BRAN REST EQUI SUBE SCTN PANE PNOD GENSEC WALL STWALL GWALL FLOOR SCREED SUBS BOX)'
+else
+  !Type = !this.type.selection()
+endif
+
+  var !min  |e| + str($!this.e - ($!this.x / 2)) + |n| + str($!this.n - ($!this.y / 2)) + |u| + str($!this.u - ($!this.z / 2))
+  var !max  |e| + str($!this.e + ($!this.x / 2)) + |n| + str($!this.n + ($!this.y / 2)) + |u| + str($!this.u + ($!this.z / 2))
+
+EXPORT all $!Type within $!min to $!max
+
+EXPORT FIN
+
+!messlocation = 'Review Export files
+Standard Export & Display file ..... $!message1$n.rvm & .disp
+created under directory ... $!Reviewpath'
+
+!message3 = !!alert.message('$!messlocation', 0.35, 0.5)
+
+Representation Obstruct off
+Representation Insulation off
+Representation level PIPE 6
+Representation level NOZZ 6
+Representation level STRU 6
+Representation Pnode Off
+Representation Snode Off
+
+!messnavisworksyesno1 = 'Do you want to view your Export file...
+Standard Review file ..... $!message1$n.rvm
+under directory ...
+$!Reviewpath in Navisworks?'
+
+!message3 = !!alert.Confirm('$!messnavisworksyesno1', 0.35, 0.5)
+
+if (!message3 eq 'NO') then
+golabel /skip_navisworks
+else
+syscom |"C:\Program Files\Autodesk\Navisworks Review 2010\roamer.exe" $!Reviewpath\$!message1$n.rvm &|
+
+endif
+
+label /skip_navisworks
+
+--!messreviewyesno1 = 'Do you want to view your Export file...
+--Standard Review file ..... $!message1$n.rvm
+--under directory ...
+--$!Reviewpath in PDMS Review?'
+
+--!message3 = !!alert.Confirm('$!messreviewyesno1', 0.35, 0.5)
+--if (!message3 eq 'NO') then
+--golabel /skip_review
+--else
+--syscom |"K:\pdms\usr1\re631\review.bat" -m $!Reviewpath\$!message1$n.rvm &|
+
+--endif
+
+--label /skip_review
+
+endmethod
+
+---New procedure to Clash-check for 1DVF for MW Hargreaves
+
+
+
+---Procedure for GA layout
+
+define method .Plano()
+
+	!pos = !!GPH3DDESIGN1.VIEW.clipboxposition
+	!xpos = !!GPH3DDESIGN1.VIEW.clipboxxlen
+	!ypos = !!GPH3DDESIGN1.VIEW.clipboxylen
+	!zpos = !!GPH3DDESIGN1.VIEW.clipboxzlen
+
+	!Efrom = !pos[1] - !xpos / 2
+	!Eto = !pos[1] + !xpos / 2
+
+	!Nfrom = !pos[2] - !ypos / 2
+	!Nto = !pos[2] + !ypos / 2
+
+	!Ufrom = !pos[3] - !zpos / 2
+	!Uto = !pos[3] + !zpos / 2
+
+	!LimFrom = 'E ' & string(!Efrom) & ' N ' & string(!Nfrom) & ' U ' & string(!Ufrom)
+
+	!LimTo = 'E ' & string(!Eto) & ' N ' & string(!Nto) & ' U ' & string(!Uto)
+
+	!lim = array()
+	!lim.append(!LimFrom & ' to ' & !LimTo)
+	!lim.append(!LimTo)
+
+	!outpu = object file('C:\PDMS\Draft\limits.txt')
+
+	!outpu.writefile('overwrite',!lim)
+	!outpu.close()
+
+	--:cdlimits 'from E 546107.5 N 151140 U -13350 to E 568107.5 N 179140 U -5350'
+
+
+	var !drwlist coll all from draw
+
+	!coll[1] = 'ADD /1HF_ROOMS'
+	!coll[2] = 'rem /1HF------C'
+
+		do !i values !drwlist
+			!nam = name of $!i
+			!site = name of site of $!i
+			   if matchw('$!site','*EDF*') then
+					skip
+			   else
+					!coll.append('add ' & '$!nam')
+			   endif
+		enddo
+
+	!outpu = object file('C:\PDMS\Draft\drwlist.txt')
+	!outpu.writefile('overwrite',!coll)
+	!outpu.close()
+	--SYSCOM 'C:\PDMS\Draft\drwlist.txt &' 
+
+endmethod
+
+-------------------------
+
+
+

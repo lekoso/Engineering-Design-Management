@@ -1,0 +1,309 @@
+--
+-- File:    aphSortMembers.pmlfrm
+-- Author:  Aurelio Peros Hinampas
+-- Created: August 28, 2018
+-- Email:   hinrey12@gmail.com
+-- Module:  ANY
+--
+-- Description: Advanced Sort Members Utility.
+--
+-- Features: Sort Members with reference to any of its valid attributes e.g. NAME, DESC, & others
+    -- : Option to Add Sorting Criteria by Expression method
+    -- : Option to Move Selected Items in the List AFTER or BEFORE to the reference sequence number
+
+
+setup form !!aphSortMembers dialog dock
+    !this.formtitle  = 'Advanced Sort Members'
+    !this.initcall   = '!this.aphSortMembers()'
+    !this.cancelcall = '!this.hide()'
+    
+    button .getCeMembers 'CE'
+    paragraph .ceName anchor top+left+right TEXT '' width 28
+    path down
+    line .horiLine at xmin.getCeMembers anchor top+left+right HORIZONTAL width 35
+    text .attribFilter 'Sort Attribute' tagwidth 9 anchor top+left+right width 25 is STRING
+    text .splitByExpr 'Split By Expr' tagwidth 9 anchor top+left+right width 25 is STRING
+    list .membersList '' at xmin.getCeMembers anchor all MULTIPLE height 15 width 33
+    toggle .advanced 'Advanced' tagwidth 7 anchor bottom+left
+    path right
+    line .barLine anchor bottom+left VERTICAL height 1
+    paragraph .orderPara anchor bottom+left TEXT 'Order' width 4
+    toggle .ascending 'Ascending' tagwidth 7 anchor bottom+left
+    toggle .descending 'Descending' tagwidth 8 anchor bottom+left
+    path down
+    button .applySort 'APPLY' at xmin.getCeMembers anchor bottom+left
+    path right
+    button .copyright '?' at xmax form-size anchor bottom+right LINKLABEL
+    
+    -- PopUp Menus on Right-Click
+    menu .rightClick POPUP
+    !this.rightClick.add('MENU', 'Move After', 'moveAfter')
+    !this.rightClick.add('MENU', 'Move Before', 'moveBefore')
+    !this.rightClick.add('SEPARATOR')
+    !this.rightClick.add('CALLBACK', 'Navigate', '!this.navigate()')
+    -- Add Selection Menus
+    !this.newMenu('moveAfter')
+    !this.newMenu('moveBefore')
+    
+    -- Set PopUp Gadget on Members List
+    !this.membersList.setPopUp(!this.rightClick)
+    
+    member .elements is ARRAY
+exit
+
+-- Method: !this.aphSortMembers()
+-- Description: Initialise Form gadgets on start-up & everytime the Form is called-out
+define method .aphSortMembers()
+    -- Initialise Gadget Values
+    !this.attribFilter.val = 'NAME'
+    !this.splitByExpr.val  = 'PART(NAME,2,|-|)'
+    !this.ascending.val    = TRUE
+    -- Gadget Active Flag for Advanced Option
+    !this.splitByExpr.active    = !this.advanced.val
+    -- Gadgets Callback
+    !this.attribFilter.callback = '!this.display(|SORT|)'
+    !this.splitByExpr.callback  = '!this.display(|SORT|)'
+    !this.getCeMembers.callback = '!this.getCeMembers()'
+    !this.membersList.callback  = '!this.membersList()'
+    !this.advanced.callback     = '!this.splitByExpr.active = !this.advanced.val !this.display(|SORT|)'
+    !this.ascending.callback    = '!this.descending.val = !this.ascending.val.not() !this.display(|SORT|)'
+    !this.descending.callback   = '!this.ascending.val = !this.descending.val.not() !this.display(|SORT|)'
+    !this.applySort.callback    = '!this.applySort()'
+    !this.copyright.callback    = '$P <$!this> Copyright 2018 - Aurelio Peros Hinampas'
+    -- Set Gadget Tooltips
+    !this.getCeMembers.setTooltip('Get All Members of CE to be Sorted.')
+    !this.attribFilter.setTooltip('Sort Attribute Filter as Sorting Reference.')
+    !this.splitByExpr.setTooltip('Sort Filter by Expression for added Sorting Criteria.')
+    !this.advanced.setTooltip('Switch to Advanced Sort Option.')
+    !this.ascending.setTooltip('Sort Members List in Ascending Order.')
+    !this.descending.setTooltip('Sort Members List in Descending Order.')
+    !this.applySort.setTooltip('Apply Sort Members.')
+    !this.copyright.setTooltip('Copyright 2018 - Aurelio Peros Hinampas')
+    
+    -- Update Display List
+    !this.display('SORT')
+endmethod
+
+-- Method: !this.getCeMembers()
+-- Description: Get All Members of the Current Element
+define method .getCeMembers()
+    -- Prompt Warning Message not to Reorder Hierarchy for certain Types
+    if (!!ce.type INSET('BRAN','PLOO','LOOP','GENSEC')) then
+        !!alert.warning('You should not Reorder Members of Element Type ' & !!ce.type)
+        -- Just allow the User to proceed
+    endif
+    
+    !this.elements = !!ce.members
+    
+    -- Update CeName Gadget Value
+    !this.ceName.val = !!ce.name
+    
+    -- Update Display List
+    !this.display('SORT')
+endmethod
+
+-- Method: !this.membersList()
+-- Description: Updates the Right-Click Menus after selection changes in the Members List
+define method .membersList()
+    -- Clear Previous Menu List
+    !this.moveAfter.clear()
+    !this.moveBefore.clear()
+    
+    -- Get the difference between the Selected Items and Members List counts
+    !index = !this.elements.evaluate(object BLOCK('!evalindex')).difference(!this.membersList.val)
+    
+    do !n values !index
+        -- Add PopUp Menus
+        !this.moveAfter.add('callback', '$!<n>', '!this.moveArray(|AFTER $!<n>|)')
+        !this.moveBefore.add('callback', '$!<n>', '!this.moveArray(|BEFORE $!<n>|)')
+    enddo
+endmethod
+
+-- Method: !this.moveArray(!action)
+-- Description: Move all selected items in the list AFTER or BEFORE the Reference Sequence Number
+define method .moveArray(!action is STRING)
+    !moveAction = !action.trim().upcase().split()[1]
+    !moveNumber = !action.trim().upcase().split()[2].real()
+    !elements   = !this.elements
+    -- Saved Element Reference to be use later as Reference in Moving AFTER or BEFORE
+    !indexRefe  = !elements[!moveNumber]
+    
+    -- Get the Selected Items in the Members List
+    !seleItems  = !this.membersList.val.sort()
+    -- Array for All Selected Items
+    !seleRefes  = object ARRAY()
+    
+    do !d values !seleItems
+        -- Store Selected Item to Array to be inserted back later on
+        !seleRefes.append(!elements[!d])
+        -- Delete Selected Item from the Elements Array
+        !elements[!d].delete()
+    enddo
+    -- Compress Elements Array
+    !elements.compress()
+    
+    -- Get the Index Number of the Reference Element
+    !indexNumber = !elements.findfirst(!indexRefe)
+    
+    -- Insert Back the Selected Items into the Elements Array
+    if (!moveAction.eq('AFTER')) then
+        !elements.insertArray(!indexNumber + 1, !seleRefes)
+    else
+        !elements.insertArray(!indexNumber, !seleRefes)
+    endif
+    
+    -- Update Elements List Array
+    !this.elements = !elements
+    
+    -- Update Display List
+    !this.display('MOVE')
+endmethod
+
+-- Method: !this.navigate()
+-- Description: Right-Click Menu to Navigate to the Selected Item in the List
+define method .navigate()
+    -- Get the selected item in Members List
+    -- For Multiple selections, it will get only the first picked Item
+    !selectedItem = !this.membersList.selection('rtext')[1]
+    
+    -- Navigate to Selected Item in the List
+    !!ce = !selectedItem.dbref()
+endmethod
+
+-- Method: !this.display(!action)
+    -- !action = 'SORT' - Sort Members List by Ascending / Descending
+    -- !action = 'MOVE' - Updates Display information's Only after Selected Items has been moved
+                -- BEFORE or AFTER to the reference element in the Right-Click Menu
+-- Description: Updates all information's in the Members List Display
+define method .display(!action is STRING)
+    -- Save Current Element Reference
+    !ceRefe = !!ce
+    
+    if (!this.advanced.val) then
+        !headings = split('No.,$!<this.attribFilter.val>,Split by Expression',',')
+    else
+        !headings = split('No.,$!<this.attribFilter.val>',',')
+    endif
+    
+    -- Update Display Headings 
+    !this.membersList.setheadings(!headings)
+    
+    -- Sort Order Ascending / Descending
+    !sortOrder = !this.ascending.val
+    -- Array of Columns for Table Object Method
+    !columns   = object ARRAY()
+    -- Array for Sort Attribute Filter & Value by Expressions method
+    !attFilter = object ARRAY()
+    !splitExpr = object ARRAY()
+    
+    -- Loop through all items in the Members List
+    do !i indices !this.elements
+        -- Set Current Element to Item in the Members List
+        !!ce = !this.elements[!i]
+        -- Get the value of the Sort Attribute Filter
+        var !sortAtt $!<this.attribFilter.val>
+        handle any
+            -- Handles any unforeseen errors
+            !sortAtt = ''
+        endhandle
+        -- Store Value to Sort Attribute Filter Array
+        !attFilter.append(!sortAtt)
+        
+        -- Advanced Option is Active
+        if (!this.advanced.val) then
+            -- Get the value by expression method
+            var !exprAtt ($!<this.splitByExpr.val>)
+            handle any
+                -- Handles any unforeseen errors
+                !exprAtt = ''
+            endhandle
+            -- Store Value to Array
+            !splitExpr.append(!exprAtt)
+        endif
+    enddo
+    
+    
+    if (!action.trim().upcase().eq('SORT')) then
+        if (!this.advanced.val) then
+            !repExprBar = !this.splitByExpr.val.replace(|'|,'|')
+            !columns.append(object COLUMN(object EXPRESSION('REAL($!<repExprBar>)'), TRUE, !sortOrder, 'REAL'))
+            !columns.append(object COLUMN(object EXPRESSION(!this.splitByExpr.val), TRUE, !sortOrder, 'EXPR'))
+        endif
+        !columns.append(object COLUMN(object EXPRESSION(!this.attribFilter.val), TRUE, !sortOrder, 'FILT'))
+        !columns.append(object COLUMN(object EXPRESSION('STRING(REFNO)'),FALSE,FALSE,'REFNO'))
+        
+        -- Create the Table Object
+        !table = object TABLE(!this.elements, !columns)
+        -- Evaluate the Table Array
+        !table.evaluate()
+        
+        -- Build Display Text Array
+        !dtext[1] = !this.elements.evaluate(object BLOCK('!evalindex.string()'))
+        !filtVal  = !table.column('FILT')
+        !dtext[2] = !filtVal.evaluate(object BLOCK('!filtVal[!evalindex].string()'))
+        if (!this.advanced.val) then
+            !dtext[3] = !table.column('EXPR')
+        endif
+        
+        -- Update Display Informations
+        !this.membersList.setColumns(!dtext)
+        
+        if (!this.elements.size().gt(0)) then
+            !this.membersList.rtext = !table.column('REFNO')
+            -- Update Members List Array
+            !this.elements = !table.column('REFNO').evaluate(object BLOCK('!table.column(|REFNO|)[!evalindex].dbref()'))
+        endif
+    else
+        -- Build Display Text Array
+        !dtext[1] = !this.elements.evaluate(object BLOCK('!evalindex.string()'))
+        !dtext[2] = !attFilter
+        if (!this.advanced.val) then
+            !dtext[3] = !splitExpr
+        endif
+        
+        -- Update Display Informations
+        !this.membersList.setColumns(!dtext)
+        
+        if (!this.elements.size().gt(0)) then
+            !this.membersList.rtext = !this.elements.evaluate(object BLOCK('!this.elements[!evalindex].string()'))
+        endif
+    endif
+    
+    -- Restore Saved Current Element Reference
+    !!ce = !ceRefe
+endmethod
+
+-- Method: !this.applySort()
+-- Description: Sort Members according to the Order in the Display List
+define method .applySort()
+    if (!this.elements.size().eq(0)) then
+        return
+    endif
+    -- Set Current Element to the Member's Owner
+    !!ce = !this.ceName.val.dbref()
+    
+    -- Enable Undo
+    !undoAble = object UNDOABLE()
+    !undoAble.description('Sort Hierarchy of ' & !this.ceName.val)
+    -- Mark Database to enable undo option
+    !undoAble.add()
+    
+    do !i indices !this.membersList.rtext
+        !dbref = !this.membersList.rtext[!i].dbref()
+        !dbSeq = !dbref.sequence
+        -- Skip Item that has the same sequence number
+        skip if (!i.eq(!dbSeq))
+        -- Reorder Element
+        if (!i.eq(1)) then
+            REORDER $!<dbSeq> BEFORE $!<i>
+        else
+            REORDER $!<dbSeq> AFTER $!<i>
+        endif
+    enddo
+    
+    -- End Undo
+    !undoAble.endUndoAble()
+endmethod
+
+
+

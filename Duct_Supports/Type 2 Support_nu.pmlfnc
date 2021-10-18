@@ -1,0 +1,87 @@
+!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!readList = !listi.readfile()
+!vol[1] = 'Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Wrap, Fire Rating, AFC, Approved, A, B, C, D, E, F'
+!format = object format()
+!format.dp = 0
+!rod = array()
+!pfc = array()
+!poss = array()
+
+
+do !j values !readList    
+
+    var !sec coll all SCTN for $!j
+    var !fitt coll all FITT for $!j
+    !fit = pos of $!fitt[1] wrt world
+    !fitu = !fit.up
+    !desp = desparam of $!fitt[1]
+    !desp.sort()
+    !rod1 = array()
+    do !n values !sec
+        var !sp spref of $!n
+        !leng = cutl of $!n
+
+        if matchw('$!sp','*PFC*') or matchw('$!sp','*L50*') then
+            !pfc.append(!leng)
+            skip
+        elseif matchw('$!sp','*ROD*') then
+            !rod.append(!leng)
+            !poss.append(pose of $!n)
+            !poss.append(poss of $!n)
+            skip
+        endif
+    enddo
+
+    !pfc.sortunique()
+    !rod.sortunique()
+
+    !line = object line()
+    !line.startposition =!poss[1]
+    !line.endposition =!poss[3]
+    !lone = !line.length()
+    !line.endposition =!poss[4]
+    !ltwo = !line.length()
+
+    if !lone LT !ltwo then
+        !F = string(!lone, !format)
+    else
+        !F = string(!ltwo, !format)
+    endif
+
+    !E = string(!rod[1], !format)
+    !atta = '$!j' & '/DATUM'
+    !despi = desp of $!atta
+    --!despi.sort()
+    !A = string(!despi[1], !format)
+    !B = string(!despi[2], !format)
+    !C = string(!rod.last() + 15 - !despi[2], !format)
+
+
+    if !despi[1] + 50 GT real(!F) then
+        !D = string(!despi[2] + 50, !format)
+    else
+        !D = string(!despi[1] + 50, !format)
+    endif
+
+    !hvac = name of hvac of $!atta
+    !typ = :supporttype of $!j
+    !data = :supportdata of $!j
+    !pag = :Support_PageNum of $!j
+    !wrap = :Wrap of $!j
+    !apruv = :Approved of $!j
+    !fire = :firerate of $!j
+    !afc = :afc of $!j
+    var !room gtroom of $!j
+    !vol.append('$!j, $!hvac, $!typ, $!data, $!pag,$!room, $!wrap, $!fire, $!afc, $!apruv, $!A, $!B, $!C, $!D, $!E, $!F')
+    !rod.clear()
+    !pfc.clear()
+    !poss.clear()
+enddo
+--
+!voll = object file('C:\UK3712_PDMS\Makros\vol.csv')        
+!voll.writefile('overwrite',!vol)
+!voll.close()
+
+syscom 'C:\UK3712_PDMS\Makros\vol.csv &'
+
+

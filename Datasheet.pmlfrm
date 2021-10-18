@@ -1,0 +1,68 @@
+
+setup form !!Datasheet dialog dock
+
+    !this.initcall   = '!this.init()'
+
+    frame .frame1 '' at x0.88 y0  
+        path down
+        button .pdf 'Open Datasheet' at xmin.frame1 y0.1 callback '!this.opendata()' width 13 height 1.5 
+        button .refresh 'Refresh' at xmax.frame1+ 1 y0.1 callback '!this.init()' width 13 height 1.5 
+        textpane .pane 'Properties' at xmin.frame1 y2.3  width 45 height 11  
+        textpane .revis '' at xmin.frame1 ymax.pane + 0.5 width 45 height 1.5
+    exit $* frame1 
+
+    define method .init()
+        !content = array()
+        !con = array()
+        if !!CE.type eq 'PIPE' or !!CE.type eq 'EQUI' or !!CE.type eq 'HVAC' then
+        
+            !this.formtitle  = 'Properties and Status of ' & !!CE.namn
+            
+            !content.append('P&ID Number: ' & !!CE.:PID_Num)
+            !content.append('P&ID Sheet Number: ' & !!CE.:PID_Sheet[1])
+            !content.append('P&ID Revision: ' & !!CE.:PID_Rev)
+            !content.append('P&ID Revision Date: ' & !!CE.:Rev_Date)
+            !content.append('P&ID System Description: ' & !!CE.:Sys_Desc)
+            !content.append('Line Modelled Status: ' & !!CE.:Modelled)
+            !content.append('Line Data Consistency Status: ' & !!CE.:DataCon)
+            !content.append('Line Clash Check Status: ' & !!CE.:ClashCheck)
+            !content.append('Line Support Status: ' & !!CE.:SupportStatus)
+            !content.append('Line Approval Status: ' & !!CE.:Approved)
+            !this.pane.val = !content
+            !this.pane.SetEditable(false)
+            
+            !meta = !!CE.:Metadata
+            !file = object file('$!!CE.:DataSheet')
+            !met = !file.dtm()
+            !metad = !met.string()
+            
+            if !meta eq !metad then
+                !con[1] = 'PDMS Model of '& !!CE.namn & ' up to date'              
+            else
+                !con[1] = 'Datasheet is altered, please update '& !!CE.namn
+            endif
+            !this.revis.val = !con   
+            !this.revis.SetEditable(false)
+         else
+            !!Alert.Error('Please select HVAC, PIPE, STRU or EQUI')
+            !this.pane.clear()
+            !this.revis.clear()
+            endif
+    endmethod
+    
+    
+    define method .opendata()
+        !comm = !!CE.:DataSheet & ' &'
+        handle ANY
+            !!Alert.Error('Please select HVAC, PIPE, STRU or EQUI')
+        endhandle
+        
+        syscom '$!comm'
+        
+        handle ANY
+            !!Alert.Error('Please select HVAC, PIPE, STRU or EQUI')
+        endhandle
+    endmethod
+    
+    
+exit 

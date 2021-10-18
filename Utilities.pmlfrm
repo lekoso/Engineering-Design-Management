@@ -1,0 +1,403 @@
+
+
+
+setup form !!Utilities dialog dock
+
+!this.formtitle  = 'Utilities'
+
+--36.8 height 13.8  
+
+--#region Gadgets 
+frame.General 'General' at x0.88 y0.1  width 
+    button .button1 'Item Properties' at x0.88 y0.1 callback '!this.uda()' width 16.8 height 1.5   
+    button .button2 'Clash Checking' at x20.24 y0.1 callback  '!this.clasho()' width 16.8 height 1.5   
+    button .button3 'Data Consistency' at xmin.button1 y2  callback '!this.dataConn()'width 16.8 height 1.5   
+    button .button4 'Daily Navis' at xmin.button2 y2 callback '!this.Navis()' width 16.8 height 1.5 
+    button .button5 'Instant Navis' at xmin.button1 ymax.button3 + .4 callback '!this.tempNavis()' width 16.8 height 1.5
+    button .button6 'Add Penetration Ref.' at xmin.button2 ymax.button3 + .4 callback '!this.pene()' width 16.8 height 1.5
+    button .button7 'SBFI ID' at xmin.button1 ymax.button6 + .4 callback '!this.sbfit()' width 16.8 height 1.5
+    button .button8 'Remove (EDF) items' at xmin.button6 ymax.button6 + .4 callback '!this.remEDF()' width 16.8 height 1.5
+exit $*  
+
+   ----------------------------------------------------------------------------------------------
+
+define method .remEDF()
+    var !draw coll all from draw
+    !rem = array()
+    do !i values !draw
+        !nam = name of $!i
+        if matchw('$!nam','*EDF*') then
+            !zone = zone of $!i
+            !rem.append('$!zone')
+        endif
+    enddo
+
+    !rem.unique()
+
+    do !j values !rem
+        rem $!j
+    enddo
+    rem /1HF------C
+    rem /-HM------C
+endmethod
+
+   
+   
+define method .sbfit()
+    var !sbfi coll all sbfi for ce
+    do !i values !sbfi
+        mar $!i
+        q $!i
+    enddo
+endmethod
+
+   
+   
+define method .pene()
+
+!typ = !!CE.type
+
+hvac
+handle any
+    pipe
+    handle any
+        !!Alert.Error('Please select a Pipe or HVAC')
+        golabel /end
+    endhandle
+endhandle
+            
+--if !typ eq 'PIPE' or !typ eq 'HVAC' then
+    add ce
+    var !pen coll all (atta bend brco grille mesh strt taper) for ce
+    do !i values !pen
+        !penref = :penref of $!i
+        if !penref.empty() then
+            skip
+        else
+            !ref = refno of $!penref[1]
+            add $!ref
+            $p $!ref
+            add $!penref[1]
+            mark $!penref[1]
+            !nam = name of $!penref[1]
+            $p $!nam
+       endif
+    enddo
+--else
+label /end 
+
+--endif
+
+endmethod
+   
+   
+   
+define method .tempNavis()
+ 
+var !draw coll all from draw
+
+!cole = array()  
+!refNum = array()  
+!items = 'pipe,stru,hvac,equi,rest'
+!types = !items.split(',')
+
+    do !l values !draw  
+    
+        if type of $!l eq 'BRAN' then
+            !d = refno of owner of $!l
+            !l = !d.string()
+        elseif type of $!l eq 'SUBE' then
+            !d = refno of equi of $!l
+            !l = !d.string()
+        elseif type of $!l eq 'SCTN' or type of $!l eq 'PNOD' or type of $!l eq 'FLOOR' then
+            !d = refno of stru of $!l
+            !l = !d.string()
+        elseif type of $!l eq 'STWALL' or type of $!l eq 'AREADE' or type of $!l eq 'SCREED' then
+            !d = refno of stru of $!l
+            !l = !d.string()
+        endif
+        
+        var !pipe coll all pipe for $!l
+        var !stru coll all stru for $!l
+        var !hvac coll all hvac for $!l
+        var !equi coll all equi for $!l
+        var !rest coll all rest for $!l
+        
+        !cole.appendarray(!pipe)
+        !cole.appendarray(!stru)
+        !cole.appendarray(!hvac)
+        !cole.appendarray(!equi)
+        !cole.appendarray(!rest)
+        
+        do !j values !cole
+            !re = refno of $!j
+            !ref = !re.string()
+            !name = name of $!j
+            !type = type of $!j
+            !dbname = dbname of $!j
+            !dbchec = !dbname.Substring(14,1)
+            
+            if !type eq 'PIPE' and matchw('$!name','*TY*') then
+                !refNum.append('$!ref, Colour 4')
+            elseif !type eq 'PIPE' and matchw('$!name','*TY(EDF)*') then
+                !refNum.append('$!ref, Colour 22')
+            elseif !type eq 'PIPE' then
+                !refNum.append('$!ref, Colour 3')
+            elseif !type eq 'HVAC' and matchw('$!name','*(EDF)*')then
+                !refNum.append('$!ref, Colour 22')
+            elseif !type eq 'HVAC' then
+                !refNum.append('$!ref, Colour 6')
+            elseif !type eq 'EQUI' and matchw('$!name','*(EDF)*') then
+                !refNum.append('$!ref, Colour 22')
+            elseif !type eq 'EQUI' then
+                !refNum.append('$!ref, Colour 20')
+            elseif !type eq 'STRU' and !dbchec eq 'C' then
+                !refNum.append('$!ref, Colour 18')
+            elseif !type eq 'STRU' and !dbchec eq 'S' then
+                !refNum.append('$!ref, Colour 27')
+            elseif !type eq 'STRU' and !dbchec eq 'E' then
+                !refNum.append('$!ref, Colour 27')
+            elseif !type eq 'STRU' and matchw('$!dbname','*MW*') then
+                !refNum.append('$!ref, Colour 27')
+            elseif !type eq 'rest' then
+                !refNum.append('$!ref, Colour 27')
+            endif
+            
+        enddo
+            
+        !cole.clear()
+    enddo 
+
+
+!fileName = 'Drawlist'
+ 
+!timing = object DateTime()
+ 
+!formatin = object DATEFORMAT('Y-M-D_T')
+ 
+!stam = !formatin.string(!timing)
+
+!stamp = !stam.replace(':','_')
+ 
+!ExportNavis = '/Y:\20-Federated-Model\208-Temp-Navis\rvm\' & !stamp & '_' & !fileName & '.rvm'
+ 
+ 
+!dir = object file('Y:\20-Federated-Model\208-Temp-Navis\')
+!dirList = !dir.files()
+ 
+    do !k values !dirList
+       if matchw('$!k','*Drawlist*') then
+            !k.deletefile()
+            handle ANY
+                skip
+            endhandle
+       endif
+    enddo
+ 
+
+--export Start
+ 
+ 
+export FILE $!ExportNavis OVER
+ 
+REPRE LEV PIPE 6
+Representation level NOZZ 4
+Representation level STRU 6
+REPRE INSU ON
+REPRE LEV  6
+EXPORT HOLES ON
+    
+do !j values !refNum
+    !refo = !j.split(',')
+    EXPORT $!refo[1] $!refo[2]
+
+    handle ANY
+        skip
+    endhandle
+    
+enddo
+ 
+export finish
+ 
+REPRE INSU OFF
+
+--!ExportAtt = '/Y:\20-Federated-Model\208-Temporary-NavisWorks\' & !stamp & '_' & !fileName & '.att'
+    
+--File $!ExportAtt OVER
+ 
+--do !m values !refNum
+    --!refo = !m.split(',')
+    --OUTPUT $!refo[1]
+    
+    --handle ANY
+        --skip
+    --endhandle
+    
+--enddo
+      
+--term
+
+---To automate the generation of nwd
+
+!nav[1] = 'cd'
+!nav[2] = 'cls'
+!nav[3] = 'echo'
+!nav[4] = 'set InFile="Y:\20-Federated-Model\208-Temp-Navis\rvm\' & !stamp & '_' & !fileName & '.rvm"'
+!nav[5] = 'set OutFile="Y:\20-Federated-Model\208-Temp-Navis\' & !stamp & '_' & !fileName & '.nwd"'
+!nav[6] = 'set RoamerCmd="C:\Program Files\Autodesk\Navisworks Simulate 2017\Roamer.exe"'
+!nav[7] = ' '
+!nav[8] = '%RoamerCmd% -nwd %OutFile% %InFile%'
+
+!file = 'Y:\20-Federated-Model\208-Temp-Navis\' & !stamp & '_' & !fileName & '.nwd'
+$p $!file
+
+!navis = object file('Y:\20-Federated-Model\208-Temp-Navis\rvm\Convert.bat')
+!navis.writefile('overwrite',!nav)
+!navis.close()
+
+syscom 'Y:\20-Federated-Model\208-Temp-Navis\rvm\Convert.bat &'
+
+!dire = object file('$!file')
+
+    do !i to 100000
+        Prompt 'Please wait, Navis is starting'
+        if !dire.exists() and !dire.size() gt 0 then
+            syscom '$!file &'
+            term
+            break
+        else
+            pause 5
+        endif
+    enddo
+
+alpha req clear
+
+endmethod
+
+
+----------------------------------------------
+
+define method .UDA()
+    show !!datasheet
+endmethod
+
+--------------------------------------------------
+define method .clasho()
+
+
+!dbnam = name of dbref
+!typ = type of ce
+!namii = namn of ce
+!nam = name of ce
+!userr = !!CDCNUSER
+
+!filNam = 'Y:\04-Mechanical\041-Data\11_Clash_Reports\' & '$!namii' & '_' & '$!userr' & '.txt'
+
+
+	--if !nam EQ '/MW-1HF' or !nam EQ'/MW-1HG' or !nam EQ '/MW-1HM' or !nam EQ '/MW-HZ' or !nam EQ '/MW-HY' or !nam EQ '/MW-2HG' or !nam EQ '/MW-2HF' or !nam EQ '/MW-2HM' or !nam EQ '/1HFA14--C' or !nam EQ '/1HFA19--C' or !nam EQ '/1HFA23--C'  or !nam EQ '/1HFB14--C' or !nam EQ '/1HFB19--C' or !nam EQ '/1HFB23--C' or !nam EQ '/1HFB30--C' then
+	if matchw('$!dbnam','*MW*') eq TRUE then
+		if !typ EQ 'HVAC' or !typ EQ 'PIPE' then
+	
+			--ALPHA LOG /C:\PDMS\Clasher.TXT OVER
+
+			DESCLASH
+			
+			FILE /$!filNam OVER
+			
+			override on
+
+			REMOVE OBST All
+			OBST ALL
+
+			NOCHECK WITHIN BRAN
+            
+            var !sbfi coll all SBFI within vol ce 0
+            
+            do !k values !sbfi
+                exclude $!k
+            enddo
+
+			EXCLUDE /1DVF_I(EDF)
+            EXCLUDE /1DVF_II(EDF)
+			EXCLUDE /1DVM_I(EDF)
+			EXCLUDE /1DVM_II(EDF)
+            EXCLUDE /0DVT_I(EDF)
+            EXCLUDE /2DVM_I(EDF)
+            EXCLUDE /2DVM_II(EDF)
+			EXCLUDE /1HF------C
+            EXCLUDE /-HM------C
+            exclude /2DVT(HG_EDF)
+            exclude /1DVT(HG_EDF)
+            exclude /9DVT(HG_EDF)
+            exclude /9DVT(HG_EDF_II)
+            exclude /0DVT_II(EDF)
+            
+            $!nam
+            
+			Check ce
+
+			REM EXCL ALL
+
+			Exit
+
+			alpha req clear
+			
+			lock all
+			unclaim ce
+
+			SYSCOM '$!filNam &'
+
+			term
+		else
+			!!Alert.Error('Please select a PIPE or HVAC under MW Sites')
+		endif
+	else
+		!!Alert.Error('Please select a PIPE or HVAC under MW Sites')
+	endif
+
+endmethod
+
+-----------------------------------------------
+
+define method .dataConn()
+
+    !nam = name of site
+    !typ = type of ce
+    !namii = namn of ce
+    !userr = !!CDCNUSER
+
+    !filNam = 'Y:\04-Mechanical\041-Data\4_DataCon\' & '$!namii' & '_' & '$!userr' & '.txt'
+
+    if !nam EQ '/MW-1HF' or !nam EQ'/MW-1HG' or !nam EQ '/MW-1HM' or !nam EQ '/MW-HZ' or !nam EQ '/MW-HY' or !nam EQ '/MW-2HG' or !nam EQ '/MW-2HF' or !nam EQ '/MW-2HM' then
+
+        if !typ EQ 'HVAC' or !typ EQ 'PIPE' then
+        
+            FILE /$!filNam OVER
+            TOL ATTACHECK OFF
+            chec ce
+            term
+            SYSCOM '$!filNam &'
+            
+        else
+            !!Alert.Error('Please select a PIPE or HVAC under Site MW-1HF, MW-2HF, MWG-1HG, MWG-HZ, MWG-1HM or MWG-2HM')
+        endif
+        
+    else
+        !!Alert.Error('Please select a PIPE or HVAC under Site MW-1HF, MW-2HF, MWG-1HG, MWG-HZ, MWG-1HM or MWG-2HM')
+    endif
+
+endmethod
+
+--------------------------------------
+
+define method .Navis()
+    syscom 'start Y:\20-Federated-Model\206-Daily-Updated-Navis\ &'
+endmethod
+
+exit 
+
+--#endregion Form definition 
+ 
+--#region Methods 
+--#endregion Methods 
+--#endregion uPML Form Designer generated code 
