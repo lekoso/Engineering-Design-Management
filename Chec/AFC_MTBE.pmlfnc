@@ -1,0 +1,30 @@
+---Make MTBE items Approved for Construction
+!sys = '1DVF'
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+
+do !x values !sites
+var !y coll all HVAC for $!x
+    do !z values !y
+        !na = name of $!z
+        if matchw('$!na','*$!sys*') eq false then
+            skip
+        else
+            var !list coll all (TP BRCO SKIR HACC) for $!z
+            do !j values !list
+                var !ty type of mtbe of $!j
+                var !na name of mtbe of $!j
+                !des = :des of $!z
+                if !ty neq 'STRT' or !ty neq 'TAPE' or !ty neq 'BEND' or !ty neq 'OFST' or !ty neq 'TRNS' or !ty neq 'ELBO' or !ty neq 'THRE' then
+                    $P $!j, $!des
+                    skip
+                else
+                    !af = :afc of $!na
+                    if !af.upcase() eq 'YES' then
+                        $!j
+                        :afc 'Yes'
+                    emdif
+            enddo
+        endif
+    enddo
+enddo

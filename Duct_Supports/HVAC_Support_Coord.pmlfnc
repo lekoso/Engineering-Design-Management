@@ -14,7 +14,7 @@ do !i values !sites
             var !atta coll all atta for $!j
             do !k values !atta
                 !name = name of $!k
-                !des = :Second_Mod of hvac of $!k
+                !des = :des of hvac of $!k
                 !st = stext of $!k
                 !sup = '/' & '$!st'
                 if matchw('$!name','*DATUM*') EQ true then
@@ -54,7 +54,7 @@ do !i values !sites
     enddo
 enddo
 
-!col = object file('C:\UK3712_PDMS\Makros\Duct_Supports\Co-ord.csv')        
+!col = object file('C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Co-ord.csv')        
 !col.writefile('overwrite',!vo)
 !col.close()
-syscom 'C:\UK3712_PDMS\Makros\Duct_Supports\Co-ord.csv &'
+syscom 'C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Co-ord.csv &'

@@ -1,0 +1,804 @@
+﻿Support Name, Line Number, Support Room, Room Description, Level, Support Type, Support Data Sheet, Data Page, Wrap, Approved, Fire Rating, Building, Designer
+/1HFA0ASV0002,/1DVF1101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0001,/1DVF1101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0007,/1DVF1101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0029,/1DVF1101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0030,/1DVF1103GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0004,/1DVF1106GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0037,/1DVF1106GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0016,/1DVF1106GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0024,/1DVF1106GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0005,/1DVF1106GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0003,/1DVF1110GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0027,/1DVF1110GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0025,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0026,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 5 - Special,45062_MWG_DR_00080_40005_Support_Type_5,4,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0031,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0006,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0038,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,3,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0028,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0017,/1DVF1110GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0012,/1DVF1201GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0011,/1DVF1201GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0068,/1DVF1201GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0043,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0057,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0058,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0008,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0044,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0009,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0010,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0045,/1DVF1202GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0050,/1DVF1211GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0051,/1DVF1211GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0040,/1DVF1211GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0007,/1DVF1217GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0006,/1DVF1217GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0005,/1DVF1217GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0021,/1DVF1217GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0004,/1DVF1217GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0002,/1DVF1217GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0061,/1DVF1217GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0003,/1DVF1217GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0001,/1DVF1217GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0057,/1DVF1301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0087,/1DVF1301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0001,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0075,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0060,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0059,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0058,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0069,/1DVF1302GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0009,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0008,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0061,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0003,/1DVF1312GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0004,/1DVF1312GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0007,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0006,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0070,/1DVF1312GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0005,/1DVF1312GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0002,/1DVF1315GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0037,/1DVF1320GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0053,/1DVF1320GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0054,/1DVF1325GL-,/1HFA1401ZL-,Firefighting Lobby, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0053,/1DVF1325GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0017,/1DVF1401GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0015,/1DVF1401GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0016,/1DVF1401GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0018,/1DVF1403GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0019,/1DVF1403GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Checked, No, 1HF Building, D. Rothwell
+/1HFA14SV0020,/1DVF1404GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Checked, No, 1HF Building, D. Rothwell
+/1HFA14SV0056,/1DVF1405GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0023,/1DVF1405GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0024,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0025,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0026,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0027,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0028,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0029,/1DVF1405GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0070,/1DVF1412GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0030,/1DVF1412GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0031,/1DVF1412GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0032,/1DVF1412GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0033,/1DVF1412GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0027,/1DVF1501GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0028,/1DVF1501GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0029,/1DVF1501GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0067,/1DVF1502GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0084,/1DVF1504GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0068,/1DVF1504GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0001,/1DVF1504GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0002,/1DVF1504GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0083,/1DVF1504GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0003,/1DVF1504GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0069,/1DVF1504GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0005,/1DVF1508GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0007,/1DVF1508GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0006,/1DVF1508GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0008,/1DVF1508GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0009,/1DVF1508GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0012,/1DVF1508GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0010,/1DVF1508GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0011,/1DVF1508GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0013,/1DVF1551GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0014,/1DVF1551GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0015,/1DVF1551GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0016,/1DVF1554GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0017,/1DVF1554GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0018,/1DVF1556GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0025,/1DVF1601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0023,/1DVF1601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0024,/1DVF1601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0026,/1DVF1601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0027,/1DVF1601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFB0ASV0001,/1DVF2101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0026,/1DVF2101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0002,/1DVF2101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0003,/1DVF2104GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0004,/1DVF2104GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0005,/1DVF2104GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0012,/1DVF2104GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0006,/1DVF2104GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0024,/1DVF2104GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0007,/1DVF2104GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0011,/1DVF2104GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0025,/1DVF2108GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0005,/1DVF2201GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0004,/1DVF2201GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0006,/1DVF2202GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0007,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0009,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0011,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0012,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0013,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0010,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0008,/1DVF2203GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0014,/1DVF2208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0016,/1DVF2208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0018,/1DVF2208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0017,/1DVF2208GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0015,/1DVF2208GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0019,/1DVF2208GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0021,/1DVF2208GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0020,/1DVF2208GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0022,/1DVF2208GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0024,/1DVF2208GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0023,/1DVF2208GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0025,/1DVF2216GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0043,/1DVF2216GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0001,/1DVF2301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0099,/1DVF2301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0002,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0003,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0005,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0006,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0007,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0010,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0008,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0009,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0004,/1DVF2302GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0011,/1DVF2313GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0013,/1DVF2313GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0012,/1DVF2313GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0017,/1DVF2313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0016,/1DVF2313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0015,/1DVF2313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0014,/1DVF2313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0018,/1DVF2314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0019,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0020,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0022,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0023,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0024,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0051,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0021,/1DVF2319GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0025,/1DVF2321GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0052,/1DVF2322GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0054,/1DVF2322GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0103,/1DVF2322GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0053,/1DVF2322GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0055,/1DVF2322GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0023,/1DVF2401GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0024,/1DVF2401GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0025,/1DVF2401GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0044,/1DVF2404GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 6 - Vertical Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0021,/1DVF2405GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0022,/1DVF2405GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0002,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0006,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0003,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0004,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0007,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0008,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0005,/1DVF2406GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0009,/1DVF2412GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0058,/1DVF2412GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0017,/1DVF2412GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0011,/1DVF2413GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0010,/1DVF2413GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0095,/1DVF2501GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0096,/1DVF2501GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0097,/1DVF2501GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0022,/1DVF2502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0109,/1DVF2506GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0024,/1DVF2506GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0094,/1DVF2506GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0025,/1DVF2506GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0026,/1DVF2506GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0027,/1DVF2506GL-,/1HFB1904ZL-,I&C Relay Room, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0028,/1DVF2509GL-,/1HFB1904ZL-,I&C Relay Room, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0001,/1DVF2509GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0081,/1DVF2510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0002,/1DVF2510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0003,/1DVF2510GL-,/1HFB1901ZL-,Firefighting Lobby, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0018,/1DVF2510GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0004,/1DVF2519GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0010,/1DVF2519GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0007,/1DVF2519GL-,/1HFB1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0006,/1DVF2519GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0005,/1DVF2519GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0009,/1DVF2519GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0008,/1DVF2519GL-,/1HFB1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0011,/1DVF2522GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0012,/1DVF2522GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0013,/1DVF2522GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0014,/1DVF2530GL-,/1HFB1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0015,/1DVF2550GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0016,/1DVF2550GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0074,/1DVF2550GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0018,/1DVF2601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0017,/1DVF2601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0015,/1DVF2601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0014,/1DVF2601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0002,/1DVF2602GL-,/1HFB2301ZL-,Firefighting Lobby, 23, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0001,/1DVF2602GL-,/1HFB2301ZL-,Firefighting Lobby, 23, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0016,/1DVF2603GL-,/1HFB2301ZL-,Firefighting Lobby, 23, Support Type 7 - Fire Damper Wall Support Type 7,45062_MWG_DR_00080_40008_Support_Type_7,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0001,/1DVF2701GL-,/1HFB2701ZL-,Firefighting Lobby, 27, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0002,/1DVF2701GL-,/1HFB2701ZL-,Firefighting Lobby, 27,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0003,/1DVF2706GL-,/1HFB2701ZL-,Firefighting Lobby, 27,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0012,/1DVF2706GL-,/1HFB2701ZL-,Firefighting Lobby, 27,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0009,/1DVF2706GL-,/1HFB2701ZL-,Firefighting Lobby, 27,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0005,/1DVF2706GL-,/1HFB2701ZL-,Firefighting Lobby, 27, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFA0ASV0018,/1DVF3102GL-,/1HFA0A01ZL-,Firefighting Lobby, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0019,/1DVF3104GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA0ASV0020,/1DVF3106GL-,/1HGT0A01ZL-,Unit 1: Connection between HGT and HFA, 0A, Support Type 7 - Fire Damper Ceiling Support,45062_MWG_DR_00080_40008_Support_Type_6,2,Yes,Yes, No, 1HGT Gallery, D. Rothwell
+/1HFA04SV0013,/1DVF3201GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0014,/1DVF3201GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0015,/1DVF3202GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0016,/1DVF3202GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0017,/1DVF3204GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0018,/1DVF3204GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0019,/1DVF3204GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0020,/1DVF3204GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA04SV0041,/1DVF3206GL-,/1HFA0401ZL-,Firefighting Lobby, 04, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0054,/1DVF3304GL-,/1HFA1001ZL-,Firefighting Lobby, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0015,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0014,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0013,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0012,/1DVF3311GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0011,/1DVF3311GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0010,/1DVF3311GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0071,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0022,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0021,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0020,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0019,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0018,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0017,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0016,/1DVF3311GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0072,/1DVF3313GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0025,/1DVF3313GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0024,/1DVF3313GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0023,/1DVF3313GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0086,/1DVF3315GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0026,/1DVF3315GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0077,/1DVF3317GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0033,/1DVF3317GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0032,/1DVF3317GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0031,/1DVF3317GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0030,/1DVF3317GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0076,/1DVF3321GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0027,/1DVF3321GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0028,/1DVF3325GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0073,/1DVF3325GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0029,/1DVF3327GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0074,/1DVF3327GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0036,/1DVF3332GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0035,/1DVF3332GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0034,/1DVF3332GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0068,/1DVF3340GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0062,/1DVF3340GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0010,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0014,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0013,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0012,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0011,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0009,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0008,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0006,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0005,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0004,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0003,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Special,45062_MWG_DR_00080_40002_Support_Type_2,-,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0002,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0001,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0007,/1DVF3401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0055,/1DVF3409GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0034,/1DVF3409GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 6 - Vertical Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,2,No,Checked, No, 1HF Building, D. Rothwell
+/1HFA14SV0069,/1DVF3413GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 7 - Fire Damper Vertical Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0057,/1DVF3413GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0021,/1DVF3416GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0062,/1DVF3501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0060,/1DVF3501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0061,/1DVF3501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0059,/1DVF3501GL-,/1HFA1904ZL-,I&C Relay Room, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0058,/1DVF3501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0057,/1DVF3501GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0056,/1DVF3501GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0055,/1DVF3501GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0033,/1DVF3505GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0031,/1DVF3505GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0034,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0035,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0036,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0037,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0038,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0039,/1DVF3505GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0063,/1DVF3506GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0030,/1DVF3506GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0032,/1DVF3506GL-,/1HFA1906ZL-,Instrumentation Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0072,/1DVF3512GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0071,/1DVF3515GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 6 - Vertical Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,2,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0070,/1DVF3515GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFB0ASV0013,/1DVF4102GL-,/1HFB0A01ZL-,Firefighting Lobby, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0034,/1DVF4104GL-,/1HGU0A01ZL-,Unit 1: Connection between HGU and HFB, 0A, Support Type 7 - Fire Damper Ceiling Support,45062_MWG_DR_00080_40008_Support_Type_7,6,No,Yes, No, 1HGU Gallery, S. Pinnock
+/1HFB0ASV0015,/1DVF4106GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0063,/1DVF4201GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0062,/1DVF4201GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0061,/1DVF4201GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0064,/1DVF4201GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0001,/1DVF4201GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0060,/1DVF4201GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0002,/1DVF4201GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0003,/1DVF4201GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0044,/1DVF4207GL-,/1HFB0401ZL-,Firefighting Lobby, 04, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0101,/1DVF4301GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0026,/1DVF4301GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0056,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0027,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0102,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0029,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0030,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0028,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0031,/1DVF4310GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0032,/1DVF4313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0034,/1DVF4313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0033,/1DVF4313GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0039,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0040,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0038,/1DVF4321GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0036,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0037,/1DVF4321GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0035,/1DVF4321GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0081,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0083,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0082,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0080,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0042,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0084,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0085,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0041,/1DVF4321GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0089,/1DVF4323GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0088,/1DVF4323GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0086,/1DVF4323GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0087,/1DVF4323GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0091,/1DVF4325GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0090,/1DVF4325GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0094,/1DVF4327GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0104,/1DVF4327GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0093,/1DVF4327GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0095,/1DVF4327GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0092,/1DVF4327GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0061,/1DVF4331GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0062,/1DVF4331GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0063,/1DVF4335GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0064,/1DVF4335GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0065,/1DVF4337GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0066,/1DVF4337GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0012,/1DVF4401GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0013,/1DVF4401GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0031,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0030,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0029,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14,  Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0028,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0027,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0026,/1DVF4402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0018,/1DVF4408GL-,/1HFB1401ZL-,Firefighting Lobby, 14, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0045,/1DVF4412GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB14SV0014,/1DVF4412GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 6 - Vertical Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0035,/1DVF4502GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0034,/1DVF4502GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0033,/1DVF4502GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0030,/1DVF4502GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0075,/1DVF4502GL-,/1HFB1901ZL-,Firefighting Lobby, 19, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0029,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0032,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0077,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0078,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0079,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0080,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0031,/1DVF4502GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0037,/1DVF4505GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0040,/1DVF4505GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0039,/1DVF4505GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0038,/1DVF4505GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0042,/1DVF4505GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0041,/1DVF4505GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0036,/1DVF4505GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0043,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0048,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0047,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0044,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0046,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0045,/1DVF4510GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0049,/1DVF4513GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0017,/1DVF4514GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0019,/1DVF4517GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0020,/1DVF4517GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0021,/1DVF4522GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0108,/1DVF4534GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0004,/1DVF4602GL-,/1HFB2301ZL-,Firefighting Lobby, 23, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB23SV0005,/1DVF4602GL-,/1HFB2301ZL-,Firefighting Lobby, 23, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0011,/1DVF4701GL-,/1HFB2702ZL-,Firefighting Stairs, 27, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0004,/1DVF4701GL-,/1HFB2701ZL-,Firefighting Lobby, 27, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0010,/1DVF4701GL-,/1HFB2701ZL-,Firefighting Lobby, 27, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB27SV0006,/1DVF4706GL-,/1HFB2702ZL-,Firefighting Stairs, 27, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFA0ASV0010,/1DVF5101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA0ASV0036,/1DVF5101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0009,/1DVF5101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0011,/1DVF5101GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0035,/1DVF5102GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0021,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0033,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0012,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0032,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0013,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0034,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA0ASV0023,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,6,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA0ASV0015,/1DVF5111GL-,/1HFA0A03ZL-,Cable Deck  Interface with 1HGT and 1HGJ, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0022,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0024,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0067,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0025,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0023,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0059,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0026,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04,  Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,5,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0028,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0029,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0065,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0064,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Special,45062_MWG_DR_00080_40002_Support_Type_2,-,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0066,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0027,/1DVF5204GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0046,/1DVF5204GL-,/1HFA0403ZL-,Battery Room, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0069,/1DVF5204GL-,/1HFA0403ZL-,Battery Room, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0047,/1DVF5204GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0072,/1DVF5210GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0073,/1DVF5210GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 6 - Special,45062_MWG_DR_00080_70001_Support_Type_6,5,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0071,/1DVF5212GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0074,/1DVF5212GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0070,/1DVF5214GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0075,/1DVF5214GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 6 - Special,45062_MWG_DR_00080_70001_Support_Type_6,5,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0031,/1DVF5220GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0030,/1DVF5221GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0049,/1DVF5221GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0038,/1DVF5225GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0037,/1DVF5225GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Special,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0062,/1DVF5225GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0039,/1DVF5225GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0042,/1DVF5225GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0078,/1DVF5250GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0077,/1DVF5250GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0076,/1DVF5290GL-,/1HFA0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0052,/1DVF5301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0085,/1DVF5301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0084,/1DVF5301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0055,/1DVF5301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA10SV0051,/1DVF5301GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA10SV0048,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0078,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0046,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0079,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0047,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0045,/1DVF5314GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0044,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0043,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0080,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0081,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0042,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0082,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0041,/1DVF5314GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0050,/1DVF5317GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0083,/1DVF5318GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0049,/1DVF5318GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0039,/1DVF5318GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA10SV0040,/1DVF5318GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA10SV0056,/1DVF5318GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA10SV0089,/1DVF5350GL-,/1HFA1005ZL-,Backup Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA10SV0088,/1DVF5390GL-,/1HFA1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA14SV0022,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA14SV0039,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA14SV0071,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA14SV0038,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0066,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0037,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Checked, E, 1HF Building, D. Rothwell
+/1HFA14SV0065,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0036,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Checked, E, 1HF Building, D. Rothwell
+/1HFA14SV0067,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0035,/1DVF5401GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,5,No,Checked, E, 1HF Building, D. Rothwell
+/1HFA14SV0041,/1DVF5415GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0042,/1DVF5415GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0062,/1DVF5415GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0043,/1DVF5415GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0046,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0045,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0063,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0044,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0061,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0047,/1DVF5417GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0060,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0048,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0049,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0050,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0059,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0064,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0058,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0051,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA14SV0052,/1DVF5417GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA14SV0074,/1DVF5450GL-,/1HFA1403ZL-,HVAC Room, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA14SV0073,/1DVF5490GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0025,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA19SV0019,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA19SV0082,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0081,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0020,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0021,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0080,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0079,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0022,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0023,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0024,/1DVF5501GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0040,/1DVF5515GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0041,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0042,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0077,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0043,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0078,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0044,/1DVF5515GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0048,/1DVF5517GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0051,/1DVF5517GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0050,/1DVF5517GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0074,/1DVF5517GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0049,/1DVF5517GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0052,/1DVF5517GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0053,/1DVF5517GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0054,/1DVF5517GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0065,/1DVF5517GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0064,/1DVF5517GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0066,/1DVF5517GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA19SV0075,/1DVF5517GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0046,/1DVF5530GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0047,/1DVF5530GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0076,/1DVF5531GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA19SV0045,/1DVF5531GL-,/1HFA1905ZL-,400kV Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA19SV0087,/1DVF5550GL-,/1HFA1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA19SV0085,/1DVF5590GL-,/1HFA1904ZL-,I&C Relay Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA23SV0018,/1DVF5601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0016,/1DVF5601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0020,/1DVF5601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0019,/1DVF5601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0022,/1DVF5602GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Horizontal Duct Roof Support- special,45062_MWG_DR_00080_70001_Support_Type_8,7,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0021,/1DVF5603GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0004,/1DVF5604GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0008,/1DVF5604GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0007,/1DVF5604GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0001,/1DVF5605GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0003,/1DVF5605GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA23SV0006,/1DVF5605GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_8,1,No,Yes, E, 1HF Building, D. Rothwell
+/1HFB0ASV0020,/1DVF6101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB0ASV0033,/1DVF6101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB0ASV0032,/1DVF6101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0019,/1DVF6101GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0021,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0031,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0009,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0030,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0008,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB0ASV0017,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB0ASV0029,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,No, E, 1HF Building, S. Pinnock
+/1HFB0ASV0022,/1DVF6113GL-,/1HFB0A03ZL-,Cable Deck  Interface with 1HGU and 1HGK, 0A, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0037,/1DVF6202GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0065,/1DVF6204GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0066,/1DVF6206GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0059,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0026,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0070,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0028,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0029,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0027,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0030,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0031,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0071,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,No, E, 1HF Building, S. Pinnock
+/1HFB04SV0033,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0034,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0072,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0073,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0032,/1DVF6208GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0077,/1DVF6208GL-,/1HFB0403ZL-,Battery Room, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0035,/1DVF6208GL-,/1HFB0403ZL-,Battery Room, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0036,/1DVF6208GL-,/1HFB0403ZL-,Battery Room, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0078,/1DVF6290GL-,/1HFB0404ZL-,Cable deck, 04, Support Type 9 - Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0068,/1DVF6211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0046,/1DVF6211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0047,/1DVF6211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0048,/1DVF6211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB04SV0051,/1DVF6220GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0052,/1DVF6220GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0067,/1DVF6220GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0049,/1DVF6220GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0050,/1DVF6220GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0079,/1DVF6250GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 9 - Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0098,/1DVF6301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0111,/1DVF6301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0096,/1DVF6301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0097,/1DVF6301GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0113,/1DVF6390GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0068,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0109,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0067,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0108,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0069,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0070,/1DVF6314GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0071,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0107,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0072,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0106,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0073,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0105,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0074,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0075,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0076,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0077,/1DVF6314GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0078,/1DVF6319GL-,/1HFB1005ZL-,Backup Switchgear Room, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,4,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0110,/1DVF6319GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0079,/1DVF6319GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB10SV0114,/1DVF6350GL-,/1HFB1005ZL-,Backup Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0015,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0016,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0063,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0062,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0061,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0060,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0059,/1DVF6401GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0054,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0055,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0050,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0053,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0052,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0051,/1DVF6402GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0032,/1DVF6415GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0033,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0047,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0034,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0057,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0035,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0001,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0046,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0056,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0036,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0037,/1DVF6415GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0038,/1DVF6416GL-,/1HFB1404ZL-,Cable deck, 14,  Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0039,/1DVF6416GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0040,/1DVF6416GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0043,/1DVF6418GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0042,/1DVF6418GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0049,/1DVF6418GL-,/1HFB1404ZL-,Cable deck, 14, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,No, E, 1HF Building, S. Pinnock
+/1HFB14SV0041,/1DVF6418GL-,/1HFB1404ZL-,Cable deck, 14,  Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB14SV0066,/1DVF6450GL-,/1HFB1403ZL-,HVAC Room, 14, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB14SV0065,/1DVF6490GL-,/1HFA1404ZL-,Cable deck, 14, Support Type 9 - Vertical Duct Wall Support- Special,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB19SV0090,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB19SV0106,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0070,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0071,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0105,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0107,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0072,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0073,/1DVF6501GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0050,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0098,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0052,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0053,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0099,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0054,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0055,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0051,/1DVF6525GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0057,/1DVF6525GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0056,/1DVF6525GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0058,/1DVF6525GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0059,/1DVF6525GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0060,/1DVF6525GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0061,/1DVF6525GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0062,/1DVF6525GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB19SV0065,/1DVF6527GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0103,/1DVF6527GL-,/1HFB1904ZL-,I&C Relay Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0064,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0102,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0067,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0104,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0066,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0101,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0063,/1DVF6527GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0069,/1DVF6541GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0100,/1DVF6541GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,No, E, 1HF Building, S. Pinnock
+/1HFB19SV0068,/1DVF6541GL-,/1HFB1905ZL-,Telecom Room, 19, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB19SV0111,/1DVF6550GL-,/1HFB1903ZL-,HVAC Room, 19, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB30SV0019,/1DVF6601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB30SV0017,/1DVF6601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB30SV0016,/1DVF6601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB30SV0015,/1DVF6601GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB30SV0020,/1DVF6602GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0014,/1DVF6603GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0008,/1DVF6613GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0010,/1DVF6613GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0009,/1DVF6613GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0011,/1DVF6620GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0013,/1DVF6620GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB23SV0007,/1DVF6699GL-,/1HFB2303ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFA0ASV0022,/1DVF7102GL-,/1HFA0A02ZL-,Firefighting Stairs, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB0ASV0023,/1DVF7124GL-,/1HFB0A02ZL-,Firefighting Stairs, 0A, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFA04SV0048,/1DVF7203GL-,/1HFA0402ZL-,Firefighting Stairs, 04, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB04SV0045,/1DVF7223GL-,/1HFB0402ZL-,Firefighting Stairs, 04, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFA10SV0063,/1DVF7302GL-,/1HFA1001ZL-,Firefighting Lobby, 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB10SV0059,/1DVF7327GL-,/1HFB1003ZL-,Firefighting Stairs (Up), 10, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB10SV0058,/1DVF7329GL-,/1HFB1003ZL-,Firefighting Stairs (Up), 10, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFA14SV0040,/1DVF7403GL-,/1HFA1401ZL-,Firefighting Lobby, 14, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB14SV0019,/1DVF7424GL-,/1HFB1402ZL-,Firefighting Stairs, 14, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFA19SV0026,/1DVF7503GL-,/1HFA1901ZL-,Firefighting Lobby, 19, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB19SV0091,/1DVF7524GL-,/1HFB1902ZL-,Firefighting Stairs, 19, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB19SV0086,/1DVF7527GL-,/1HFB1902ZL-,Firefighting Stairs, 19,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0082,/1DVF7528GL-,/1HFB1902ZL-,Firefighting Stairs, 19, Support Type 8 - Fan Support 1,45062_MWG_DR_00080_70001_Support_Type_8,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0083,/1DVF7528GL-,/1HFB1902ZL-,Firefighting Stairs, 19, Support Type 8 - Fan Support 1,45062_MWG_DR_00080_70001_Support_Type_8,2,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0084,/1DVF7528GL-,/1HFB1902ZL-,Firefighting Stairs, 19, Support Type 8 - Attenuator Support 1,45062_MWG_DR_00080_70001_Support_Type_8,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB19SV0085,/1DVF7528GL-,/1HFB1902ZL-,Firefighting Stairs, 19, Support Type 8 - Attenuator Support 1,45062_MWG_DR_00080_70001_Support_Type_8,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFA23SV0009,/1DVF7601GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0012,/1DVF7603GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0011,/1DVF7603GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 8 - Fan Support 2,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0015,/1DVF7603GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, D. Rothwell
+/1HFA23SV0013,/1DVF7603GL-,/1HFA2301ZL-,Roof Top, 23, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, D. Rothwell
+/1HFB23SV0003,/1DVF7624GL-,/1HFB2302ZL-,Firefighting Stairs, 23, Support Type 7 - Fire Damper Wall Support 1,45062_MWG_DR_00080_40008_Support_Type_7,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB27SV0008,/1DVF7724GL-,/1HFB2702ZL-,Firefighting Stairs, 27, Support Type 7 - Fire Damper Wall Support 3,45062_MWG_DR_00080_40008_Support_Type_7,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB30SV0004,/1DVF7801GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0002,/1DVF7801GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0003,/1DVF7802GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0006,/1DVF7802GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0007,/1DVF7802GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0013,/1DVF7803GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0012,/1DVF7803GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0010,/1DVF7804GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0009,/1DVF7804GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, No, 1HF Building, S. Pinnock
+/1HFB30SV0011,/1DVF7804GL-,/1HFB3001ZL-,Roof Top, 30, Support Type 6 - Horizontal Duct Roof Support,45062_MWG_DR_00080_70001_Support_Type_6,3,No,Yes, No, 1HF Building, S. Pinnock
+/1HFA04SV0035,/1DVF8201GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0036,/1DVF8201GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0053,/1DVF8201GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0052,/1DVF8201GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0054,/1DVF8201GL-,/1HFA0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, D. Rothwell
+/1HFA04SV0055,/1DVF8205GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA04SV0056,/1DVF8205GL-,/1HFA0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB04SV0053,/1DVF8211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0075,/1DVF8211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0038,/1DVF8211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0054,/1DVF8211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0055,/1DVF8211GL-,/1HFB0403ZL-,Battery Room, 04, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, E, 1HF Building, S. Pinnock
+/1HFB04SV0076,/1DVF8229GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 7 - Fire Damper Vertical Floor Support 1,45062_MWG_DR_00080_40008_Support_Type_7,4,Yes,No, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0057,/1DVF8229GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB04SV0056,/1DVF8229GL-,/1HFB0405ZL-,Cable deck  Battery Room Roof, 04, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFA10SV0066,/1DVF8302GL-,/1HFA1001ZL-,Firefighting Lobby, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFA10SV0038,/1DVF8302GL-,/1HFA1001ZL-,Firefighting Lobby, 10,  Support Type 5 - Wall Support Cantilever,45062_MWG_DR_00080_40005_Support_Type_5,2,Yes,Yes, EIS, 1HF Building, D. Rothwell
+/1HFB10SV0043,/1DVF8329GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 7 - Fire Damper Vertical Floor Support 2,45062_MWG_DR_00080_40008_Support_Type_7,5,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0112,/1DVF8329GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0044,/1DVF8329GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 9 - Vertical Duct Wall Support,45062_MWG_DR_00080_40009_Support_Type_9,1,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0045,/1DVF8329GL-,/1HFB1004ZL-,HV/LV Switchgear Room, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0057,/1DVF8329GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 7 - Fire Damper Wall Support 2,45062_MWG_DR_00080_40008_Support_Type_7,2,Yes,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0047,/1DVF8329GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,No,Yes, EIS, 1HF Building, S. Pinnock
+/1HFB10SV0048,/1DVF8329GL-,/1HFB1001ZL-,Firefighting Lobby, 10, Support Type 2 - Ceiling Support,45062_MWG_DR_00080_40002_Support_Type_2,3,Yes,Yes, E, 1HF Building, S. Pinnock
+/1HGU05SV0002,/1DVF9114GL-,/1HGU0501ZL-,Unit 1: Connection between HTE and HGU, 05, Type 7 -Fire Damper Support,Undefined,Undefined,No,No, No, 1HGU Gallery, S. Pinnock
+/1HGU05SV0001,/1DVF9117GL-,/1HGU1001ZLE,Unit 1: Externe not buried area - HGU Escape, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGU Gallery, S. Pinnock
+/1HGU05SV0003,/1DVF9117GL-,/1HGU1001ZLE,Unit 1: Externe not buried area - HGU Escape, 10, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Checked, No, 1HGU Gallery, S. Pinnock
+/1HGK06SV0002,/1DVF9127GL-,/1HGK1001ZLE,Unit 1: Externe not buried area - HGK Escape, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGK Gallery, S. Pinnock
+/1HGJ06SV0001,/1DVF9137GL-,/1HGJ1001ZLE,Unit 1: Externe not buried area - HGJ Escape, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGJ Gallery, S. Pinnock
+/1HGT05SV0001,/1DVF9144GL-,/1HGT0501ZL-,Unit 1: Connection between HGT and HGT, 05, Type 7 -Fire Damper Support,Undefined,Undefined,No,No, No, 1HGT Gallery, S. Pinnock
+/1HGT05SV0003,/1DVF9147GL-,/1HGT1001ZLE,Unit 1: Externe not buried area - HGT Escape, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGT Gallery, S. Pinnock
+/1HGT05SV0004,/1DVF9147GL-,/1HGT1001ZLE,Unit 1: Externe not buried area - HGT Escape, 10, Support Type 8 - Fan Support 3,45062_MWG_DR_00080_70001_Support_Type_8,5,No,Checked, No, 1HGT Gallery, S. Pinnock
+/1HGU0ASV0001,/1DVF9151GL-,/1HGT1002ZLE,Unit 1: Air Intake from outside for HGJ-K-T-U, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGT Gallery, S. Pinnock
+/1HGU0ASV0002,/1DVF9151GL-,/1HGT1002ZLE,Unit 1: Air Intake from outside for HGJ-K-T-U, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGT Gallery, S. Pinnock
+/1HGU0ASV0003,/1DVF9151GL-,/1HGT1002ZLE,Unit 1: Air Intake from outside for HGJ-K-T-U, 10, Type 6 -Ground Support 1,Undefined,Undefined,No,No, No, 1HGT Gallery, S. Pinnock
+/1HTE05SV0001,/1DVF9111GL-,/1HTE1001ZL-,, 10, Support Type 6 - Horizontal Duct Floor Support,45062_MWG_DR_00080_70001_Support_Type_6,1,No,No, No, 1HTE Building, S. Pinnock

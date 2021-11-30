@@ -1,0 +1,92 @@
+!sys = '1DVF'
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!coll = array()
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !x values !hvac
+        !nam = name of $!x
+        if matchw('$!nam','*$!sys*') eq FALSE then
+            skip
+        else            
+            var !all coll all (STRT BRCO CAP MESH TAPE BEND OFST TRNS HFAN) for $!x
+            do !j values !all
+                var !des desp of $!j
+                !dez = :des of hvac of $!j
+                !desp = !des.split(' ')
+                !ty = type of $!j
+            
+                !type = type of $!j
+                !inl = real(!desp[2])
+                !inw = real(!desp[3])
+                handle any
+                    !inw = !inl
+                endhandle
+
+                !outl = real(!desp[4])
+                !outw = real(!desp[5])        
+                handle any
+                    !outw = !outl
+                endhandle
+
+                !inf = !desp[58] & !desp[68]
+                !outf = !desp[59] & !desp[69]
+
+                if !inl gt !inw then
+                    !in = !inl
+                else
+                    !in = !inw
+                endif
+
+                if !outl gt !outw then
+                    !out = !outl
+                else
+                    !out = !outw
+                endif
+
+                if !type eq 'BRCO' then     
+                    !outf = !desp[60] & !desp[70]
+                    !outl = real(!desp[41])
+                    !outw = real(!desp[42])
+
+                    if !outl gt !outw then
+                        !out = !outl
+                    else
+                        !out = !outw
+                    endif
+
+                    if !out leq 350 and !outf neq 'FJ40' then
+                        !coll.append(' $!j, $!ty, $!dez')
+                    elseif !out gt 350 and !outf neq 'FJ50' then
+                        !coll.append(' $!j, $!ty, $!dez')
+                    endif
+                    skip
+                endif
+
+                if matchw('$!inf','*FLAT*') eq false then
+                    if matchw('$!inf','*RE*') eq false then
+                        if !in leq 350 and !inf neq 'FJ40' then
+                            !coll.append(' $!j, $!ty, $!dez')
+                        elseif !in gt 350 and !inf neq 'FJ50' then
+                            !coll.append(' $!j, $!ty, $!dez')
+                        endif
+                    endif
+                endif
+
+                if matchw('$!outf','*FLAT*') eq false then
+                    if matchw('$!outf','*RE*') eq false then
+                        if !out leq 350 and !outf neq 'FJ40' then
+                            !coll.append(' $!j, $!ty, $!dez')
+                        elseif !out gt 350 and !outf neq 'FJ50' then
+                            !coll.append(' $!j, $!ty, $!dez')
+                        endif
+                    endif
+                endif
+            enddo            
+        endif
+    enddo
+enddo
+
+!coll.unique()
+q var !coll

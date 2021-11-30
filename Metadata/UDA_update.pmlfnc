@@ -1,0 +1,21 @@
+!list = object file('C:\UK3712_PDMS\Makros\Apps\Metadata\list.csv')
+!readList = !list.readfile()
+!list.close()
+
+!at = !readList[1]
+!att = !at.split(',')
+!readList.remove(1)
+
+do !i to !readList.size()
+    !item = !readList[!i].split(',')
+    $!item[1]
+    unloc all for ce
+    handle any
+        $p $!item[1]
+        skip
+    endhandle
+
+    do !j from 2 to !att.size()
+        $!att[$!j] '$!item[$!j]'
+    enddo
+enddo

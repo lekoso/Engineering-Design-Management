@@ -1,0 +1,53 @@
+﻿Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Level, Wrap, Fire Rating, AFC, Approved, A, B, C, D, E
+/1HFA0ASV0016, /1DVF1106GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA0A02ZL-, 0A, Yes, No, No, Yes, 150, 100
+/1HFA0ASV0025, /1DVF1110GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFA0A02ZL-, 0A, Yes, No, No, Yes, 100, 100
+/1HFA0ASV0017, /1DVF1110GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFA0A02ZL-, 0A, Yes, No, No, Yes, 100, 100
+/1HFA04SV0040, /1DVF1211GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA0404ZL-, 04, Yes, No, No, Yes, 100, 100
+/1HFA10SV0087, /1DVF1301GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFA1004ZL-, 10, Yes, No, No, Yes, 500, 500
+/1HFA10SV0053, /1DVF1320GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA1004ZL-, 10, Yes, No, No, Yes, 100, 100
+/1HFB0ASV0012, /1DVF2104GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0A01ZL-, 0A, Yes, No, No, Yes, 200, 200
+/1HFB0ASV0011, /1DVF2104GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0A01ZL-, 0A, Yes, No, No, Yes, 200, 150
+/1HFB04SV0004, /1DVF2201GL-, Support Type 7 - Fire Damper Vertical Floor Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFB0404ZL-, 04, No, No, Yes, Yes, 300, 250
+/1HFB04SV0043, /1DVF2216GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0404ZL-, 04, Yes, No, No, Yes, 150, 100
+/1HFB10SV0099, /1DVF2301GL-, Support Type 7 - Fire Damper Vertical Floor Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFB1004ZL-, 10, Yes, No, No, Yes, 550, 500
+/1HFB10SV0051, /1DVF2319GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB1004ZL-, 10, Yes, No, No, Yes, 300, 200
+/1HFB10SV0055, /1DVF2322GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB1001ZL-, 10, Yes, No, No, Yes, 200, 100
+/1HFA0ASV0018, /1DVF3102GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA0A01ZL-, 0A, Yes, No, No, Yes, 100, 100
+/1HFA0ASV0019, /1DVF3104GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA0A03ZL-, 0A, Yes, No, No, Yes, 250, 200
+/1HFA04SV0041, /1DVF3206GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA0401ZL-, 04, Yes, No, No, Yes, 100, 100
+/1HFA10SV0054, /1DVF3304GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA1001ZL-, 10, Yes, No, No, Yes, 100, 100
+/1HFA10SV0068, /1DVF3340GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFA1005ZL-, 10, Yes, No, No, Yes, 300, 250
+/1HFB0ASV0013, /1DVF4102GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0A01ZL-, 0A, Yes, No, No, Yes, 150, 150
+/1HFB0ASV0015, /1DVF4106GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFB0A03ZL-, 0A, Yes, No, No, Yes, 300, 200
+/1HFB04SV0044, /1DVF4207GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0401ZL-, 04, Yes, No, No, Yes, 150, 100
+/1HFB10SV0056, /1DVF4310GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB1004ZL-, 10, Yes, No, No, Yes, 150, 150
+/1HFA0ASV0023, /1DVF5111GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 6,/1HFA0A03ZL-, 0A, Yes, EIS, No, Yes, 900, 700
+/1HFA04SV0072, /1DVF5210GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFA0404ZL-, 04, Yes, EIS, No, Yes, 500, 500
+/1HFA04SV0071, /1DVF5212GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFA0404ZL-, 04, Yes, EIS, No, Yes, 500, 500
+/1HFA04SV0070, /1DVF5214GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFA0404ZL-, 04, Yes, EIS, No, Yes, 500, 500
+/1HFA04SV0049, /1DVF5221GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA0403ZL-, 04, Yes, EIS, No, Yes, 500, 500
+/1HFA04SV0042, /1DVF5225GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFA0405ZL-, 04, Yes, EIS, No, Yes, 800, 1000
+/1HFA04SV0076, /1DVF5290GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA0404ZL-, 04, Yes, No, No, Yes, 500, 500
+/1HFA10SV0055, /1DVF5301GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA1004ZL-, 10, Yes, EIS, No, Yes, 800, 700
+/1HFA10SV0056, /1DVF5318GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA1005ZL-, 10, Yes, EIS, No, Yes, 1000, 800
+/1HFB0ASV0022, /1DVF6113GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB0A03ZL-, 0A, Yes, EIS, No, Yes, 900, 700
+/1HFB04SV0037, /1DVF6202GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFB0404ZL-, 04, Yes, EIS, Yes, Yes, 900, 800
+/1HFB04SV0065, /1DVF6204GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFB0404ZL-, 04, Yes, EIS, Yes, Yes, 900, 800
+/1HFB04SV0066, /1DVF6206GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFB0404ZL-, 04, Yes, EIS, Yes, Yes, 900, 800
+/1HFB04SV0059, /1DVF6208GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB0404ZL-, 04, Yes, No, No, Yes, 500, 500
+/1HFB04SV0048, /1DVF6211GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB0403ZL-, 04, No, No, No, Yes, 500, 500
+/1HFB04SV0050, /1DVF6220GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFB0405ZL-, 04, Yes, EIS, No, Yes, 800, 1000
+/1HFB10SV0098, /1DVF6301GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB1004ZL-, 10, Yes, No, No, Yes, 800, 700
+/1HFB10SV0077, /1DVF6314GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB1005ZL-, 10, No, No, No, Yes, 1000, 800
+/1HFA0ASV0022, /1DVF7102GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFA0A02ZL-, 0A, Yes, EIS, No, Yes, 900, 900
+/1HFB0ASV0023, /1DVF7124GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB0A02ZL-, 0A, Yes, EIS, No, Yes, 900, 900
+/1HFA04SV0048, /1DVF7203GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFA0402ZL-, 04, Yes, EIS, No, Yes, 900, 900
+/1HFB04SV0045, /1DVF7223GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFB0402ZL-, 04, Yes, EIS, No, Yes, 900, 900
+/1HFA10SV0063, /1DVF7302GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFA1001ZL-, 10, Yes, EIS, No, Yes, 900, 900
+/1HFB10SV0059, /1DVF7327GL-, Support Type 7 - Fire Damper Wall Support 3, 45062_MWG_DR_00080_40008_Support_Type_7, 3,/1HFB1003ZL-, 10, No, No, No, Yes, 1400, 1400
+/1HFB10SV0058, /1DVF7329GL-, Support Type 7 - Fire Damper Wall Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 1,/1HFB1003ZL-, 10, Yes, EIS, No, Yes, 900, 900
+/1HFA04SV0055, /1DVF8205GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFA0405ZL-, 04, Yes, EIS, No, Yes, 700, 250
+/1HFB04SV0076, /1DVF8229GL-, Support Type 7 - Fire Damper Vertical Floor Support 1, 45062_MWG_DR_00080_40008_Support_Type_7, 4,/1HFB0405ZL-, 04, Yes, EIS, Yes, No, 400, 450
+/1HFA10SV0066, /1DVF8302GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFA1001ZL-, 10, Yes, EIS, No, Yes, 400, 450
+/1HFB10SV0043, /1DVF8329GL-, Support Type 7 - Fire Damper Vertical Floor Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 5,/1HFB1004ZL-, 10, Yes, EIS, No, Yes, 400, 450
+/1HFB10SV0057, /1DVF8329GL-, Support Type 7 - Fire Damper Wall Support 2, 45062_MWG_DR_00080_40008_Support_Type_7, 2,/1HFB1001ZL-, 10, Yes, EIS, No, Yes, 450, 400

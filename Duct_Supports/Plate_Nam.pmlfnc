@@ -1,0 +1,47 @@
+----Support FITT Unique Naming
+
+!sys = '1DVF'
+!vo[1] = 'Plate Reference, East(X), North (Y), Height (Z), Support Name, Room, Level, Support Type, Dtata Sheet, Page, Fire Rated, Designer'
+!site = '/MW-1HF, /MW-1HM,  /MW-1HG,  /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!c = 1
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !nam = name of $!j
+        if matchw('$!nam','*$!sys*') eq FALSE then
+            skip
+        else
+            var !atta coll all atta for $!j    
+            do !i values !atta
+                !nam = name of $!j
+                !des = :des of $!j
+                !name = name of $!i
+                !stext = stext of $!i
+                !sup = '/' & !stext
+                !mt = mtbegref of $!i
+                
+                if matchw('$!name','*DATUM*') EQ true then
+                    !zone = name of parent of $!sup
+                    handle ANY
+                        $p $!name $!sup
+                        skip
+                    endhandle
+                    var !fit coll all FITT for $!sup
+                    do !l values !fit
+                        var !nai name of $!l
+                        if matchw('$!nai','*=*') eq TRUE then
+                            $!l
+                            !stru = name of stru
+                            !nu = '$!stru' & '/' & '$!c'
+                            nam $!nu
+                            !c = !c + 1
+                        endif
+                    enddo
+                    !c = 1                    
+                endif
+            enddo
+        endif
+    enddo
+enddo

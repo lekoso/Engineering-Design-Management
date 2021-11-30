@@ -1,0 +1,28 @@
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!sys = '1DVF'
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !na = name of $!j
+        if matchw('$!na','*$!sys*') eq false then
+            skip
+        else
+            var !col coll all (STRT DAMP BRCO CAP MESH TAPE BEND OFST SILE TRNS FLEX HFAN GASK SKIR GRIL ELBO) for $!j                        
+            !n = 1
+            do !i values !col
+                $!i
+                :partno unset                
+                if type of $!i eq 'SKIR' or type of $!i eq 'BRCO' or type of $!i eq 'TP' or type of $!i eq 'HACC' then
+                    !part = :partno of mtbe
+                    :partno $!part[1]
+                    skip
+                else    
+                    :partno $!n
+                endif
+                !n = !n + 1
+            enddo
+        endif
+    enddo
+enddo

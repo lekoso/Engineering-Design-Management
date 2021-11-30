@@ -1,0 +1,57 @@
+!sys = 'DVT'
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!item = 'STRT DAMP TAPE BEND OFST SILE TRNS FLEX HFAN ELBO THRE'
+
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !na = name of $!j
+        if matchw('$!na','*$!sys*') eq false then
+            skip
+        else
+            var !all coll all ($!item) for $!j
+            do !i values !all
+                !ch = false
+                var !des desp of $!i
+                !typ = type of $!i
+                !mod = :des of hvac of $!i
+                !seq = seq of $!i
+                !mem = member of owner of $!i
+
+                do !x from ($!seq + 1) to ($!seq + 8)
+                    !ty = type of $!mem[$!x]
+                   handle (2,752)
+                        !a = type of first mem of tref of bran of $!i
+                            handle any 
+                                !ch = false
+                                break
+                            endhandle
+                        if !a eq 'GASK' then
+                            !ch = true
+                        else
+                            !ch = false
+                        endif
+                       break
+                   endhandle
+
+                    if !typ eq 'STRT' and matchw('$!des','*FLAT*') then
+                        !ch = true
+                        break
+                    elseif !ty eq 'GASK' then
+                        !ch = true
+                        break
+                   elseif matchw('$!item','*$!ty*') then
+                       !ch = false
+                       break                        
+                    endif
+                enddo
+
+                if !ch eq false then
+                    $P  $!i, $!mod
+                endif
+            enddo
+        endif
+    enddo
+enddo

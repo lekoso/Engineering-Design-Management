@@ -1,0 +1,13 @@
+﻿Ref. No., Name, Type, Part No., Line Number, Detailed Desc., Inlet L., Inlet W., Outlet L., Outlet W., Length, Insulation, Level, Room, Room Description, Building, Penetration Reference, Material, Fire Rating, Approved for Cons/Fab
+20652/137,/1DVF9111BH-, GRIL, 1, /1DVF9111GL-, Inlet Triple Bank Lourve, 600, 500, 600, 500, 195, 0, 10, /1HTE1001ZL- /1HTE1002ZL-, , 1HTE Building, NA, Stainless Steel 316L, No, No
+20652/116,NA, STRT, 2, /1DVF9111GL-, Rectangular Straight, 500, 600, 500, 600, 847, 0, 10, /1HTE1001ZL-, , 1HTE Building, /1HTE1001VM-/002, Stainless Steel 316L, No, No
+20652/116,NA, SKIR, 2, /1DVF9111GL-, Penetration Spool Plate, 500, 600, 1050, 1150, 6, 0, 10, /1HTE1001ZL-, , 1HTE Building, /1HTE1001VM-/002, Stainless Steel 316L, No, No
+20652/134,NA, GASK, 3, /1DVF9111GL-, Rectangular Gasket, 500, 600, 500, 600, 3, 0, 10, /1HTE1001ZL-, , 1HTE Building, NA, NA, No, No
+20652/114,NA, BEND, 4, /1DVF9111GL-, Rectangular 90 degree Radiused Bend, 500, 600, 500, 600, 712, 90, 10, /1HTE1001ZL-, , 1HTE Building, NA, Stainless Steel 316L, No, No
+20652/132,NA, GASK, 5, /1DVF9111GL-, Rectangular Gasket, 500, 600, 500, 600, 3, 0, 10, /1HTE1001ZL-, , 1HTE Building, NA, NA, No, No
+20652/115,/1DVF9112RA-, DAMP, 6, /1DVF9111GL-, Fire Damper, 600, 500, 600, 500, 300, 90, 10, /1HTE1001ZL-, , 1HTE Building, NA, Stainless Steel 316L, No, No
+20652/131,NA, GASK, 7, /1DVF9111GL-, Rectangular Gasket, 600, 500, 600, 500, 3, 0, 10, /1HTE1001ZL-, , 1HTE Building, NA, NA, No, No
+28844/6,NA, STRT, 8, /1DVF9111GL-, Rectangular Straight, 600, 500, 600, 500, 500, 90, 05, /1HTE0501ZL- /1HTE1001ZL-, , 1HTE Building, /1HTE1001DB-/001, Stainless Steel 316L, No, No
+28844/6,NA, SKIR, 8, /1DVF9111GL-, Penetration Spool Plate, 600, 500, 1150, 1050, 6, 0, 10, /1HTE1001ZL-, , 1HTE Building, /1HTE1001DB-/001, Stainless Steel 316L, No, No
+20652/130,NA, GASK, 9, /1DVF9111GL-, Rectangular Gasket, 600, 500, 600, 500, 3, 0, 05, /1HTE0501ZL-, , 1HTE Building, NA, NA, No, No
+28844/10,/1DVF9113BW-, MESH, 10, /1DVF9111GL-, Supply Air Grille - Mesh, 600, 500, 600, 500, 10, 0, 05, /1HTE0501ZL-, , 1HTE Building, NA, Stainless Steel 316L, No, No

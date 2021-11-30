@@ -1,0 +1,37 @@
+---Check if TP BRCO SKIR HACC follow real items
+!sys = 'DVM'
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+
+do !x values !sites
+var !y coll all HVAC for $!x
+    do !z values !y
+        !na = name of $!z
+        if matchw('$!na','*$!sys*') eq false then
+            skip
+        else
+            var !list coll all (TP BRCO SKIR HACC) for $!z
+            do !j values !list
+                var !ty type of mtbe of $!j
+                !des = :des of $!z
+                if !ty eq 'STRT' then
+                    skip
+                elseif !ty eq 'TAPE' then
+                    skip
+                elseif !ty eq 'BEND' then
+                    skip
+                elseif !ty eq 'OFST' then
+                    skip
+                elseif !ty eq 'TRNS' then
+                    skip
+                elseif !ty eq 'ELBO' then
+                    skip
+                elseif !ty eq 'THRE' then
+                    skip
+                else 
+                    $P $!j, $!des
+                endif            
+            enddo
+        endif
+    enddo
+enddo

@@ -1,0 +1,37 @@
+--Apply Reference Numbers to items
+!sys = '1DVF'
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !na = name of $!j
+        if matchw('$!na','*$!sys*') eq false then
+            skip
+        else
+            unloc all for $!j
+            var !all coll all (STRT DAMP BRCO CAP MESH TAPE BEND OFST SILE TRNS FLEX HFAN SKIR GASK GRIL ELBO TP HACC) for $!j
+            do !i values !all
+                $!i
+                if type of $!i eq 'SKIR' or type of $!i eq 'BRCO' or type of $!i eq 'TP' or type of $!i eq 'HACC' then
+                    var !refo refno of mtbegref of ce
+                    !ref = !refo.split('=')
+                else
+                    var !refo refno of ce
+                    !ref = !refo.split('=')
+                endif
+                var !hva name of hvac of ce
+                var !ro gtroom of ce
+                !room = !ro.substring(2)
+                var !pid :PID_Num of hvac of ce
+                :LineRef '$!hva'
+                :roomRef '$!room'
+                :PID_Num '$!pid'
+                :RefNumb '$!ref[2]'
+            enddo
+        endif
+    enddo
+enddo
+
+$P Done

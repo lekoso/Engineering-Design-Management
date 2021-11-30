@@ -1,0 +1,60 @@
+----FITT Schedule
+
+!sys = '1DVF'
+!vo[1] = 'Plate Reference, East(X), North (Y), Height (Z), Support Name, Room, Level, Support Type, Dtata Sheet, Page, Fire Rated, Designer'
+!site = '/MW-1HF, /MW-1HM,  /MW-1HG,  /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!vo[1] = 'Plate Name, Support Name, Plate Length, Plate Width, Plate Thickness, Line Number, Support Room, Room Description, Level, Support Type, Data Sheet, Sheet, Designer'
+
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !nam = name of $!j
+        if matchw('$!nam','*$!sys*') eq FALSE then
+            skip
+        else
+            var !atta coll all atta for $!j    
+            do !i values !atta
+                !nam = name of $!j
+                !des = :des of $!j
+                !name = name of $!i
+                !stext = stext of $!i
+                !sup = '/' & !stext
+                !mt = mtbegref of $!i
+                
+                if matchw('$!name','*DATUM*') EQ true then
+                    !zone = name of parent of $!sup
+                    handle ANY
+                        $p $!name $!sup
+                        skip
+                    endhandle
+                    var !fit coll all FITT for $!sup
+                    do !l values !fit
+                        var !nai name of $!l
+                        !typi = :supporttype of $!sup
+                        !data = :supportdata of $!sup
+                        !pag = :support_pagenum of $!sup
+                        !at = desp of $!l
+                        var !room gtroom of $!sup
+                        if !room eq 'unset' then
+                            !room = 'Not Available'
+                            !rdesc = 'Not Available'
+                            !lev = 'NA'
+                        else
+                            !roo = !room.split(' ')
+                            !rdesc = desc of $!roo[1]
+                            !lev = !room.trim().substring(6,2)
+                        endif
+                        !vo.append('$!nai, $!sup, $!at[1], $!at[2], $!at[3], $!nam, $!room, $!rdesc, $!lev, $!typi, $!data, $!pag, $!des')
+                    enddo                   
+                endif
+            enddo
+        endif
+    enddo
+enddo
+
+!col = object file('C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Plate_Sch.csv')        
+!col.writefile('overwrite',!vo)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Plate_Sch.csv &'

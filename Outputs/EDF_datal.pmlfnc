@@ -1,0 +1,14 @@
+!list = '/BASEPLATE-6 /BASEPLATE-5 /BASEPLATE-4 /BASEPLATE-2 /BASEPLATE-1 /BASEPLATE-3'
+!lis = !list.split(' ')
+
+do !i to !lis.size()
+    $!lis[$!i]
+    !nam = !!CE.nam.split('/')
+    !file = '/C:/PDMS/random/' & !nam[2] & '.txt'
+
+    file $!file output ce
+    handle ANY
+    
+    endhandle
+    term
+enddo

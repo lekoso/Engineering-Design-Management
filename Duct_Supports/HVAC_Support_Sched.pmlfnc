@@ -1,0 +1,129 @@
+!sys = '1DVF'
+!vo[1] = 'Plate Reference, East(X), North (Y), Height (Z), Support Name, Room, Level, Support Type, Dtata Sheet, Page, Fire Rated, Designer'
+!site = '/MW-1HF, /MW-1HM,  /MW-1HG,  /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!vo[1] = 'Support Name, Line Number, Support Room, Room Description, Level, Support Type, Support Data Sheet, Data Page, Wrap, Approved, Fire Rating, Building, Designer'
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !nam = name of $!j
+        if matchw('$!nam','*$!sys*') eq FALSE then
+            skip
+        else
+            var !atta coll all atta for $!j    
+            do !i values !atta
+                !nam = name of $!j
+                !des = :des of $!j
+                !name = name of $!i
+                !stext = stext of $!i
+                !sup = '/' & !stext
+                !mt = mtbegref of $!i
+                
+                if matchw('$!name','*DATUM*') EQ true then
+                    !zone = name of parent of $!sup
+                    handle ANY
+                        $p $!name $!sup
+                        skip
+                    endhandle
+                    !typ = :supporttype of $!sup
+                    !data = :supportdata of $!sup
+                    !pag = :Support_PageNum of $!sup
+                    !wrap = :Wrap of $!sup
+                    !fire = :firerate of $!sup
+                    !apruv = :Approved of $!sup
+
+                    !room = name of gtroom of $!sup
+                    handle ANY
+                        !room = 'unset'
+                    endhandle
+                    if !room neq 'unset' then
+                        !rsp = !room.split(' ')
+                        !rdesc = desc of $!rsp[1]
+                        !lev = !room.trim().substring(6,2)
+                    endif
+
+                if matchw('$!room','*1HF*') then
+                    !build = '1HF Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGJ*') then
+                    !build = '1HGJ Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGK*') then
+                    !build = '1HGK Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGT*') then
+                    !build = '1HGT Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGU*') then
+                    !build = '1HGU Gallery' 
+                    golabel /stop1               
+                elseif matchw('$!room','*1HTE*') then
+                    !build = '1HTE Building' 
+                    golabel /stop1  
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building' 
+                    golabel /stop1               
+                elseif matchw('$!room','*9HZN*') then
+                    !build = '9HZN Building' 
+                    golabel /stop1 
+                elseif matchw('$!room','*0HGY*') then
+                    !build = '0HGY Gallery' 
+                    golabel /stop1
+                elseif matchw('$!room','*0HY*') then
+                    !build = '0HY Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGI*') then
+                    !build = '1HGI Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGN*') then
+                    !build = '1HGN Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGP*') then
+                    !build = '1HGP Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGR*') then
+                    !build = '1HGR Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HF*') then
+                    !build = '2HF Building'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGN*') then
+                    !build = '2HGN Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGP*') then
+                    !build = '2HGP Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGR*') then
+                    !build = '2HGR Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*9HGL*') then
+                    !build = '9HGL Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*9HGM*') then
+                    !build = '9HGM Gallery'
+                    golabel /stop1
+                elseif !room eq 'unset' and !syst eq '2DVM' then
+                    !build = '2HM Building'
+                    golabel /stop1
+                elseif !room eq 'NA' and !syst neq '2DVM' then
+                    !build = 'NA'
+                    golabel /stop1
+                endif
+
+                label /stop1                    
+
+                    !vo.append('$!sup,$!nam,$!room,$!rdesc, $!lev, $!typ,$!data,$!pag,$!wrap,$!apruv, $!fire, $!build, $!des')
+                endif
+            enddo
+        endif
+    enddo
+enddo
+
+!col = object file('C:\UK3712_PDMS\Makros\Apps\Duct_Supports\col.csv')        
+!col.writefile('overwrite',!vo)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\Apps\Duct_Supports\col.csv &'

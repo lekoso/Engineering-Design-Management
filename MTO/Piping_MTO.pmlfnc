@@ -1,0 +1,203 @@
+
+$P Starting Piping MTO
+!site = '/MW-1HF, /MW-1HM, /MW-1HG,  /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+
+!sites = !site.split(',')
+!coll[1] = 'Ref. No., Name, Type, System, Line Number, System Description, Inlet Bore, Outlet Bore, Pipe Length, Material, Detailed Description, Room, Room Description, Level, Building, File Reference' 
+
+!format = object format()
+!format.dp = 0
+
+----Amendment for DX Piping
+!list = object file('C:\UK3712_PDMS\Makros\Apps\Piping_Duct_MTO\DX_Piping.txt')
+!readList = !list.readfile()
+!fir = array()
+!sec = array()
+!thi = array()
+
+do !i values !readList
+    !val = !i.split(',')
+    !val[1].trim()
+    !val[2].trim()
+    !fir.append('$!val[1]')
+    !sec.append('$!val[2]')
+enddo
+---------------------------------------
+--Amendment for PVC Piping
+!list = object file('C:\UK3712_PDMS\Makros\Apps\Piping_Duct_MTO\PVC.txt')
+!read = !list.readfile()
+--------------------------------------------------
+
+do !k values !sites
+    var !pipe coll all pipe for $!k
+    do !j values !pipe
+        !nam = name of $!j
+        !u = !fir.find('$!nam')
+        !n = !read.find('$!nam')
+        var !sys :Sys_Desc of $!j
+
+        if matchw('$!nam','*1DVF*') then
+            !syst = '1DVF'
+        elseif matchw('$!nam','*1DVM*') then
+            !syst = '1DVM'
+        elseif matchw('$!nam','*2DVM*') then
+            !syst = '2DVM'
+        elseif matchw('$!nam','*DVT*') then
+            !syst = 'DVT'
+        elseif matchw('$!nam','*2DVF*') then
+            !syst = '2DVF'
+        endif
+
+       var !all coll all (TUBI VALV BEND INST FLAN GASK TEE OLET FBLI ELBO FILT VTWA) for $!j
+            do !i values !all
+                !type = type of $!i
+                var !refi refno of $!i
+                !ref = !refi.split('=')
+                !line = name of PIPE of $!i
+                !deDes = rtext of detref of $!i
+                !deDesc = !deDes.replace(',',' ')
+
+                if !u.empty() eq false then
+                    !bore1[1] = !sec[!u[1]]
+                    !bore2[1] = !sec[!u[1]]
+                    !matr = 'Copper'
+                elseif !n.empty() eq false then
+                    !matr = 'PVC'
+                else
+                    if !type eq 'TUBI' then
+                        !bore1 = split(string(lbore of $!i),'m')
+                        !bore2 = split(string(lbore of $!i),'m')
+                    elseif !type eq 'OLET' or !type eq 'TEE' then
+                        !bore1 = split(string(abor of $!i),'m')
+                        var !b p3 of $!i
+                        !sp = !b.split(' ')
+                        !bore2 = split(!sp[4],'m')
+                    else
+                        !bore1 = split(string(abore of $!i),'m')
+                        !bore2 = split(string(lbore of $!i),'m')
+                    endif
+
+                    if !type eq 'TUBI' then
+                         !matr = ' ASTM A53 GRADE A'
+                    elseif !type eq 'ELBO' or !type eq 'TEE' then
+                        !matr = 'ASTM A234'
+                    elseif !type eq 'OLET' or !type eq 'FLAN' or !type eq 'FBLI' then
+                        !matr = 'ASTM A105'
+                    elseif !type eq 'FILT' or !type eq 'VALV' or !type eq 'INST' then
+                        !matr = 'Manufacturer Specified'
+                    elseif !type eq 'GASK' then
+                        !matr = '1.5mm Exfoliated Graphite'
+                    endif
+                endif
+                
+                if type of $!i eq 'BEND' then
+                    !len = split(string(actradius of $!i),'m')
+                    --q var !i
+                    --var !len[1] cons dist pa to pl of $!i
+                    !len[1] = string(real(!len[1]), !format)
+                elseif !type eq 'TUBI' then
+                    !len = split(string(itlen of $!i),'m')
+                    !len[1] = string(real(!len[1]), !format)
+                else
+                    !len = split(string(fitlen of $!i),'m')
+                    !len[1] = string(real(!len[1]), !format)
+                endif                 
+                    
+                !level = pos of $!i wrt world
+                
+                var !room gtroom of $!i
+                if !room eq 'unset' then
+                    !room = 'Not Available'
+                endif
+
+                if !room neq 'Not Available' then
+                    !roo = !room.split(' ')
+                    !rdesc = desc of $!roo[1]
+                else
+                    !rdesc = 'Not Available'
+                endif
+
+                var !na name of $!i
+                !nami = !na.split('=')
+                if !nami.size() eq 2 then
+                    !nam = 'NA'
+                else
+                    !nam = !nami[1]
+                endif
+                
+                if !room neq 'Not Available' then
+                    !lev = !room.trim().substring(6,2)
+                else
+                    !lev = 'Not Available'
+                endif
+
+                !fil = :fileref of $!i
+                handle any
+                    !fil = 'NA'
+                endhandle
+
+                if matchw('$!room','*1HF*') then
+                    !build = '1HF Building'
+                elseif matchw('$!room','*1HGJ*') then
+                    !build = '1HGJ Gallery'
+                elseif matchw('$!room','*1HGK*') then
+                    !build = '1HGK Gallery'
+                elseif matchw('$!room','*1HGT*') then
+                    !build = '1HGT Gallery'
+                elseif matchw('$!room','*1HGU*') then
+                    !build = '1HGU Gallery'                
+                elseif matchw('$!room','*1HTE*') then
+                    !build = '1HTE Building'   
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building'
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building'                
+                elseif matchw('$!room','*9HZN*') then
+                    !build = '9HZN Building'  
+                elseif matchw('$!room','*0HGY*') then
+                    !build = '0HGY Gallery' 
+                elseif matchw('$!room','*0HY*') then
+                    !build = '0HY Building'
+                elseif matchw('$!room','*1HGI*') then
+                    !build = '1HGI Gallery'
+                elseif matchw('$!room','*1HGN*') then
+                    !build = '1HGN Gallery'
+                elseif matchw('$!room','*1HGP*') then
+                    !build = '1HGP Gallery'
+                elseif matchw('$!room','*1HGR*') then
+                    !build = '1HGR Gallery'
+                elseif matchw('$!room','*2HF*') then
+                    !build = '2HF Building'
+                elseif matchw('$!room','*2HGN*') then
+                    !build = '2HGN Gallery'
+                elseif matchw('$!room','*2HGP*') then
+                    !build = '2HGP Gallery'
+                elseif matchw('$!room','*2HGR*') then
+                    !build = '2HGR Gallery'
+                elseif matchw('$!room','*9HGL*') then
+                    !build = '9HGL Gallery'
+                elseif matchw('$!room','*9HGM*') then
+                    !build = '9HGM Gallery'
+                elseif !room eq 'Not Available' and !syst eq '2DVM' then
+                    !build = '2HM Building'
+                elseif !room eq 'Not Available' and !syst neq '2DVM' then
+                    !build = 'Not Available'
+                endif
+                
+ 
+                if !type eq 'TUBI' then
+                    !type = 'PIPE'
+                endif
+                        
+                !coll.append('$!ref[2], $!nam, $!type, $!syst, $!line, $!sys, $!bore1[1], $!bore2[1], $!len[1], $!matr,' & !deDesc & ',$!room, $!rdesc, $!lev,  $!build, $!fil')
+                
+            enddo
+        !u.clear()
+           
+    enddo
+enddo
+    
+!col = object file('C:\UK3712_PDMS\Makros\Apps\Piping_Duct_MTO\Pipe.csv')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\Apps\Piping_Duct_MTO\Pipe.csv &'

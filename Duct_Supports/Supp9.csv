@@ -1,0 +1,18 @@
+﻿Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Level Wrap, Fire Rating, AFC, Approved, A, B, C, D, Threaded Rod Length
+/1HFA0ASV0007, /1DVF1101GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA0A03ZL-, 0A, No, No, Yes, Yes, 300, 200, 505, 520, 250
+/1HFA04SV0012, /1DVF1201GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA0404ZL-, 04, No, No, Yes, Yes, 500, 500, 820, 835, 275
+/1HFA04SV0011, /1DVF1201GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA0404ZL-, 04, No, No, Yes, Yes, 500, 500, 820, 835, 275
+/1HFA04SV0068, /1DVF1201GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA0404ZL-, 04, Yes, No, No, Yes, 200, 300, 500, 515, 250
+/1HFA10SV0057, /1DVF1301GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA1004ZL-, 10, No, No, No, Yes, 500, 500, 820, 835, 300
+/1HFB04SV0005, /1DVF2201GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB0404ZL-, 04, No, No, Yes, Yes, 300, 250, 590, 605, 250
+/1HFB04SV0006, /1DVF2202GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB0404ZL-, 04, No, No, Yes, Yes, 550, 500, 820, 835, 275
+/1HFB10SV0001, /1DVF2301GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1004ZL-, 10, No, No, No, Yes, 550, 500, 820, 835, 250
+/1HFB10SV0002, /1DVF2302GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1004ZL-, 10, No, No, No, Yes, 800, 750, 966, 981, 1000
+/1HFA04SV0020, /1DVF3204GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA0405ZL-, 04, Yes, No, Yes, Yes, 250, 300, 600, 615, 250
+/1HFA10SV0062, /1DVF3340GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFA1005ZL-, 10, Yes, No, No, Yes, 300, 250, 955, 970, 250
+/1HFB04SV0003, /1DVF4201GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB0405ZL-, 04, No, No, Yes, Yes, 250, 300, 540, 555, 229
+/1HFB10SV0101, /1DVF4301GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1005ZL-, 10, Yes, No, No, Yes, 250, 300, 540, 555, 229
+/1HFB10SV0026, /1DVF4301GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1005ZL-, 10, Yes, No, No, Yes, 250, 300, 965, 980, 229
+/1HFB04SV0056, /1DVF8229GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB0405ZL-, 04, Yes, EIS, Yes, Yes, 400, 450, 710, 725, 223
+/1HFB10SV0112, /1DVF8329GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1004ZL-, 10, Yes, EIS, No, Yes, 400, 450, 690, 705, 223
+/1HFB10SV0044, /1DVF8329GL-, Support Type 9 - Vertical Duct Wall Support, 45062_MWG_DR_00080_40009_Support_Type_9, 1,/1HFB1004ZL-, 10, Yes, EIS, No, Yes, 400, 450, 690, 705, 373

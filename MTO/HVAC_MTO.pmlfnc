@@ -1,0 +1,219 @@
+$P Starting HVAC MTO
+
+!site = '/MW-1HF, /MW-1HM, /MW-1HG, /MW-1HT, /MW-HY, /MW-HZ, /MW-2HF, /MW-2HG, /MW-2HM'
+!sites = !site.split(',')
+!coll[1] = 'Ref. No., Name, Type, Part No., Line Number, Detailed Desc., Inlet L., Inlet W., Outlet L., Outlet W., Length, Insulation, Level, Room, Room Description, Building, Penetration Reference, Material, Fire Rating, Approved for Cons/Fab'
+!sys = '1DVF'
+
+!format = object format()
+!format.dp = 0
+
+do !k values !sites
+    var !hvac coll all hvac for $!k
+    do !j values !hvac
+        !nam = name of $!j
+
+        if matchw('$!nam','*$!sys*') eq FALSE then
+            skip
+        else
+            var !all coll all (STRT DAMP BRCO CAP MESH TAPE BEND OFST SILE TRNS FLEX HFAN GASK SKIR GRIL ELBO THRE) for $!j
+            do !i values !all
+                !type = type of $!i
+                !ref = :refnumb of $!i
+                !line = name of HVAC of $!i
+                var !na name of $!i
+                !nami = !na.split('=')
+
+                if !nami.size() eq 2 then
+                    !nam = 'NA'
+                else
+                    !nam = !nami[1]
+                endif
+                
+                !equid = :EquiDesc of $!i
+                handle any
+                    !equid = 'NA'
+                endhandle
+                if !equid NEQ 'NA' then
+                    !deDesc = !equid
+                else
+                    !deDesc = Splt of $!i
+                endif
+
+                var !att desp of $!i
+                !atti = !att.split(' ')
+                --q var !atti[2]
+                !inletL = !atti[2].split('m')
+                !inletW = !atti[3].split('m')
+                
+                if !inletW[1] eq 'DIAM' then
+                    !inletW[1] = !inletL[1]
+                endif
+                    
+                !outletL = !atti[4].split('m')
+                !outletW = !atti[5].split('m')
+                
+                if !outletW[1] eq 'DIAM' then
+                    !outletW[1] = !outletL[1]
+                endif
+                    
+                if type of $!i eq 'BEND' then
+                    !len = split(string(actradius of $!i),'m')
+                    !len[1] = string(real(!len[1]), !format)
+                    golabel /stop
+                elseif type of $!i eq 'BRCO' then
+                    !len = !atti[7].split('m')
+                    golabel /stop
+                elseif type of $!i eq 'SKIR' then
+                    !deDesc = 'Penetration Spool Plate'
+                    !outletL = !atti[41].split('m')
+                    !outletW = !atti[42].split('m')
+                    
+                    !x[1] = real(!atti[15])
+                    !x[2] = real(!atti[33])
+                    !x[3] = real(!atti[54])
+                    !x.sort()
+                    !len[1] = string(!x[3], !format)
+                    golabel /stop
+                else             
+                    !len = !atti[6].split('m')
+                endif 
+                
+                label /stop
+
+                --!room = name of gtroom of $!i
+                var !room gtroom of $!i
+                if !room eq 'unset' then
+                    !room = 'Not Available'
+                endif
+
+                if !room neq 'Not Available' then
+                    !roo = !room.split(' ')
+                    !rdesc = desc of $!roo[1]
+                else
+                    !rdesc = 'Not Available'
+                endif
+
+                if !room eq 'NA' or !room eq 'unset' then
+                    !lev = 'NA'
+                else
+                    !lev = !room.trim().substring(6,2)
+                endif
+
+
+                if matchw('$!room','*1HF*') then
+                    !build = '1HF Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGJ*') then
+                    !build = '1HGJ Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGK*') then
+                    !build = '1HGK Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGT*') then
+                    !build = '1HGT Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGU*') then
+                    !build = '1HGU Gallery' 
+                    golabel /stop1               
+                elseif matchw('$!room','*1HTE*') then
+                    !build = '1HTE Building' 
+                    golabel /stop1  
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HM*') then
+                    !build = '1HM Building' 
+                    golabel /stop1               
+                elseif matchw('$!room','*9HZN*') then
+                    !build = '9HZN Building' 
+                    golabel /stop1 
+                elseif matchw('$!room','*0HGY*') then
+                    !build = '0HGY Gallery' 
+                    golabel /stop1
+                elseif matchw('$!room','*0HY*') then
+                    !build = '0HY Building'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGI*') then
+                    !build = '1HGI Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGN*') then
+                    !build = '1HGN Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGP*') then
+                    !build = '1HGP Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*1HGR*') then
+                    !build = '1HGR Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HF*') then
+                    !build = '2HF Building'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGN*') then
+                    !build = '2HGN Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGP*') then
+                    !build = '2HGP Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*2HGR*') then
+                    !build = '2HGR Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*9HGL*') then
+                    !build = '9HGL Gallery'
+                    golabel /stop1
+                elseif matchw('$!room','*9HGM*') then
+                    !build = '9HGM Gallery'
+                    golabel /stop1
+                elseif !room eq 'unset' and !syst eq '2DVM' then
+                    !build = '2HM Building'
+                    golabel /stop1
+                elseif !room eq 'NA' and !syst neq '2DVM' then
+                    !build = 'NA'
+                    golabel /stop1
+                endif
+
+                label /stop1
+
+                var !penref name of :penref of $!i            
+                handle any
+                    !penref = 'NA'
+                endhandle
+
+                if !penref eq 'unset' then
+                    !penref = 'NA'
+                endif
+
+                var !mat matn of $!i
+                if !mat eq 'unset' then
+                    !mat = 'NA'
+                endif
+                
+                var !fire :firerate of $!i
+                var !part :partno of $!i
+
+                var !in icatref of $!i
+                if !in eq 'unset' then
+                    !insu = '0'
+                else
+                    !a = !in.split('U')
+                    !insu = !a[2]
+                endif
+
+                var !afc :afc of $!i
+                handle any
+                    !afc = 'NA'
+                endhandle
+
+
+                !coll.append('$!ref,$!nam, $!type, $!part, $!line, $!deDesc, $!inletL[1], $!inletW[1], $!outletL[1], $!outletW[1], $!len[1], $!insu, $!lev, $!room, $!rdesc, $!build, $!penref, $!mat, $!fire, $!afc')
+            enddo
+        endif
+    enddo    
+enddo
+
+!col = object file('C:\UK3712_PDMS\Makros\Apps\MTO\HVAC.csv')        
+!col.writefile('overwrite',!coll)
+!col.close()
+syscom 'C:\UK3712_PDMS\Makros\Apps\MTO\HVAC.csv &'
+
+$P HVAC MTO Done

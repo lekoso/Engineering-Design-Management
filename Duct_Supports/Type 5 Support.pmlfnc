@@ -1,6 +1,8 @@
-!listi = object file('C:\UK3712_PDMS\Makros\list.txt')
+!listi = object file('C:\UK3712_PDMS\Makros\Apps\Duct_Supports\list5.csv')
 !readList = !listi.readfile()
-!vol[1] = 'Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Wrap, Fire Rating, AFC, Approved, A, B, C, D, E'
+!listi.close()
+
+!vol[1] = 'Support Name, Line Number,Support Type, Support Data Sheet, Data Page,Room, Level, Wrap, Fire Rating, AFC, Approved, A, B, C, D, E'
 
 !format = object format()
 !format.dp = 0
@@ -54,16 +56,21 @@ do !j values !readList
     !fire = :firerate of $!j
     !afc = :afc of $!j
     var !room gtroom of $!j
-    !vol.append('$!j, $!hvac, $!typ, $!data, $!pag,$!room, $!wrap, $!fire, $!afc, $!apruv, $!A, $!B, $!C, $!D, $!E')
+
+    if !room neq 'unset' then
+        !rsp = !room.split(' ')
+        !rdesc = desc of $!rsp[1]
+        !lev = !room.trim().substring(6,2)
+    endif
+
+    !vol.append('$!j, $!hvac, $!typ, $!data, $!pag,$!room, $!lev, $!wrap, $!fire, $!afc, $!apruv, $!A, $!B, $!C, $!D, $!E')
  
     !rod.clear()
     !pfc.clear()
 enddo
 --
-!voll = object file('C:\UK3712_PDMS\Makros\vol.csv')        
+!voll = object file('C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Supp5.csv')        
 !voll.writefile('overwrite',!vol)
 !voll.close()
 
-syscom 'C:\UK3712_PDMS\Makros\vol.csv &'
-
-
+syscom 'C:\UK3712_PDMS\Makros\Apps\Duct_Supports\Supp5.csv &'
